@@ -34,6 +34,7 @@ a {
   background: linear-gradient(180deg, #000000 20.98%, rgba(0, 0, 0, 0) 100%);
 }
 .container .header .header__container {
+  max-width: 1116px;
   width: 77.7%;
   display: flex;
   justify-content: space-between;
@@ -161,7 +162,7 @@ a {
   color: rgb(255, 255, 255);
 }
 .container .main .offer .offer__container .offer__discription .offer__discription-bottom {
-  padding-top: 5px;
+  padding-top: 10px;
   font-family: "Hauora";
   font-weight: 500;
   font-size: 18px;
@@ -204,7 +205,7 @@ a {
 }
 .container .main .rate {
   padding-top: 166px;
-  padding-bottom: 200px;
+  padding-bottom: 261px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -212,6 +213,8 @@ a {
   background: linear-gradient(rgb(4, 4, 26), rgb(1, 1, 1));
 }
 .container .main .rate .rate__container {
+  position: relative;
+  max-width: 1116px;
   width: 77.7%;
   display: flex;
   flex-direction: column;
@@ -236,8 +239,9 @@ a {
   color: rgb(112, 111, 146);
 }
 .container .main .rate .rate__container .rate__container__box {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 123px;
 }
 .container .main .rate .rate__container .rate__container__box .rate__container__box-free {
@@ -515,15 +519,29 @@ a {
 .container .main .rate .rate__container .rate__container__question .question__button:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
 }
+.container .main .rate .rate__container::after {
+  content: "";
+  position: absolute;
+  margin-top: 975px;
+  margin-left: 27px;
+  width: 926px;
+  height: 450px;
+  background-image: url("../../public/images/rateLine.svg");
+  background-repeat: no-repeat;
+  background-size: 926px 450px;
+  transition: all 1s ease 0s;
+}
 .container .main .process {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: rgb(1, 1, 1);
   padding-bottom: 505px;
 }
 .container .main .process .process__container {
+  position: relative;
+  max-width: 1116px;
   width: 77.7%;
   display: flex;
   flex-direction: column;
@@ -588,6 +606,7 @@ a {
 .container .main .process .process__container .process__items .process__items__box .process__items__box-img {
   width: 234px;
   height: 228px;
+  mix-blend-mode: screen;
 }
 .container .main .process .process__container .process__items .process__items__box .process__items__box-title {
   margin-top: 30px;
@@ -608,6 +627,18 @@ a {
   color: rgb(112, 111, 146);
   max-width: 285px;
 }
+.container .main .process .process__container::after {
+  content: "";
+  position: absolute;
+  margin-top: 1250px;
+  margin-left: 29px;
+  width: 6px;
+  height: 350px;
+  background-image: url("../../public/images/processLine.png");
+  background-repeat: no-repeat;
+  background-size: 6px 350px;
+  transition: all 1s ease 0s;
+}
 .container .main .solution {
   display: flex;
   justify-content: center;
@@ -617,6 +648,8 @@ a {
   padding-bottom: 370px;
 }
 .container .main .solution .solution__container {
+  position: relative;
+  max-width: 1116px;
   width: 77.7%;
   display: flex;
   flex-direction: column;
@@ -797,6 +830,18 @@ a {
   height: 360px;
   mix-blend-mode: screen;
 }
+.container .main .solution .solution__container::after {
+  content: "";
+  position: absolute;
+  margin-top: 1650px;
+  margin-left: 25px;
+  width: 793px;
+  height: 350px;
+  background-image: url("../../public/images/solutionLine.svg");
+  background-repeat: no-repeat;
+  background-size: 793px 350px;
+  transition: all 1s ease 0s;
+}
 .container .main .manage {
   display: flex;
   justify-content: center;
@@ -806,6 +851,8 @@ a {
   padding-bottom: 370px;
 }
 .container .main .manage .manage__container {
+  position: relative;
+  max-width: 1116px;
   width: 77.7%;
   display: flex;
   flex-direction: column;
@@ -944,6 +991,18 @@ a {
   height: 360px;
   mix-blend-mode: screen;
 }
+.container .main .manage .manage__container::after {
+  content: "";
+  position: absolute;
+  margin-top: 1050px;
+  margin-left: 25px;
+  width: 793px;
+  height: 350px;
+  background-image: url("../../public/images/solutionLine.svg");
+  background-repeat: no-repeat;
+  background-size: 793px 350px;
+  transition: all 1s ease 0s;
+}
 .container .main .hub {
   display: flex;
   justify-content: center;
@@ -953,6 +1012,8 @@ a {
   padding-bottom: 387px;
 }
 .container .main .hub .hub__container {
+  position: relative;
+  max-width: 1116px;
   width: 77.7%;
   display: flex;
   flex-direction: column;
@@ -1005,6 +1066,18 @@ a {
   letter-spacing: 0;
   color: rgb(255, 255, 255);
 }
+.container .main .hub .hub__container::after {
+  content: "";
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 31px;
+  width: 793px;
+  height: 350px;
+  background-image: url("../../public/images/solutionLine.svg");
+  background-repeat: no-repeat;
+  background-size: 793px 350px;
+  transition: all 1s ease 0s;
+}
 .container .main .invite {
   display: flex;
   justify-content: center;
@@ -1014,6 +1087,7 @@ a {
   padding-bottom: 218px;
 }
 .container .main .invite .invite__container {
+  max-width: 1116px;
   width: 77.7%;
   display: flex;
   flex-direction: column;
@@ -1089,7 +1163,6 @@ a {
 }
 .container .footer {
   background: linear-gradient(rgb(6, 6, 40) 10%, rgb(8, 8, 52));
-  padding-top: 220px;
   padding-bottom: 109.46px;
   width: 100%;
   display: flex;
@@ -1097,7 +1170,8 @@ a {
   align-items: center;
 }
 .container .footer .footer__container {
-  width: 80%;
+  max-width: 1116px;
+  width: 77.7%;
   max-width: 1120px;
   display: flex;
   justify-content: space-between;
