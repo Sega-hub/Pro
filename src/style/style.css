@@ -275,10 +275,13 @@ a {
   margin-top: 123px;
 }
 .container .main .rate .rate__container .rate__container__box .rate__container__box-free {
+  min-width: 548px;
   width: 548px;
   height: 768px;
+  min-height: 768px;
   border: 1px solid rgb(73, 73, 73);
   border-radius: 20px;
+  overflow: hidden;
   opacity: 0;
   transition: 0.5s;
 }
@@ -343,15 +346,20 @@ a {
   margin-top: 40px;
   display: flex;
   margin-left: 24px;
-  width: 502px;
+  margin-right: 22px;
+  width: 91, 6%;
+  max-width: 502px;
   border: 1px solid rgb(73, 73, 73);
 }
 .container .main .rate .rate__container .rate__container__box .rate__container__box-free .bottom {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  height: 395px;
+  width: 548px;
+  height: 58.1%;
   background-color: rgb(13, 13, 14);
-  padding: 35px 0 0 105px;
+}
+.container .main .rate .rate__container .rate__container__box .rate__container__box-free .bottom .bottom__list {
+  padding: 30px 0 0 105px;
 }
 .container .main .rate .rate__container .rate__container__box .rate__container__box-free .bottom .bottom__list li {
   margin-left: 15px;
@@ -368,10 +376,13 @@ a {
 }
 .container .main .rate .rate__container .rate__container__box .rate__container__box-team {
   margin-left: 20px;
+  min-width: 548px;
   width: 548px;
   height: 768px;
+  min-height: 768px;
   border-radius: 20px;
   border: 1px solid rgb(23, 19, 147);
+  overflow: hidden;
   opacity: 0;
   transition: 0.5s;
   transition-delay: 0.3s;
@@ -477,13 +488,15 @@ a {
   margin-top: 40px;
   display: flex;
   margin-left: 24px;
-  width: 502px;
+  margin-right: 22px;
+  width: 91, 6%;
   border: 1px solid rgb(41, 40, 85);
 }
 .container .main .rate .rate__container .rate__container__box .rate__container__box-team .bottom {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   height: 395px;
+  max-height: 395px;
   background: linear-gradient(rgb(6, 6, 17), rgb(5, 5, 35));
   padding: 0 0 35px 95px;
 }
@@ -497,7 +510,7 @@ a {
   color: rgb(255, 255, 255);
 }
 .container .main .rate .rate__container .rate__container__box .rate__container__box-team .bottom ul {
-  margin-top: 27px;
+  margin-top: 12px;
 }
 .container .main .rate .rate__container .rate__container__box .rate__container__box-team .bottom ul li {
   margin-left: 15px;
@@ -670,6 +683,7 @@ a {
   opacity: 1;
 }
 .container .main .process .process__container .process__items {
+  margin-top: 100px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 357px);
@@ -758,7 +772,7 @@ a {
 .container .main .process .process__container::after {
   content: "";
   position: absolute;
-  margin-top: 1250px;
+  margin-top: 1350px;
   margin-left: 29px;
   width: 6px;
   height: 0px;
@@ -775,7 +789,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: linear-gradient(black, rgb(1, 1, 9));
+  background: linear-gradient(rgb(1, 1, 1) 20%, rgb(1, 1, 9));
   padding-bottom: 370px;
 }
 .container .main .solution .solution__container {
@@ -881,7 +895,7 @@ a {
   opacity: 1;
 }
 .container .main .solution .solution__container .solution__box .solution__box__integration .integration__info .integration__discription {
-  margin-top: 10px;
+  margin-top: 15px;
   font-family: "Hauora";
   font-weight: 500;
   font-size: 18px;
@@ -923,6 +937,7 @@ a {
   width: 100%;
 }
 .container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__freelance {
+  min-width: 548px;
   width: 548px;
   height: 666px;
   border-radius: 20px;
@@ -948,7 +963,7 @@ a {
   opacity: 1;
 }
 .container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__freelance .freelance__info .freelance__discription {
-  margin-top: 10px;
+  margin-top: 15px;
   font-family: "Hauora";
   font-weight: 500;
   font-size: 18px;
@@ -980,6 +995,7 @@ a {
   opacity: 1;
 }
 .container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__plans {
+  min-width: 548px;
   width: 548px;
   height: 666px;
   border-radius: 20px;
@@ -1005,7 +1021,7 @@ a {
   opacity: 1;
 }
 .container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__plans .plans__info .plans__discription {
-  margin-top: 10px;
+  margin-top: 15px;
   font-family: "Hauora";
   font-weight: 500;
   font-size: 18px;
@@ -1135,7 +1151,6 @@ a {
   width: 100%;
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom {
-  margin-top: 24px;
   gap: 24px;
   display: flex;
   width: 100%;
@@ -1166,7 +1181,7 @@ a {
   opacity: 1;
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .freelance__info .freelance__discription {
-  margin-top: 10px;
+  margin-top: 15px;
   font-family: "Hauora";
   font-weight: 500;
   font-size: 18px;
@@ -1223,7 +1238,7 @@ a {
   opacity: 1;
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .plans__info .plans__discription {
-  margin-top: 10px;
+  margin-top: 15px;
   font-family: "Hauora";
   font-weight: 500;
   font-size: 18px;
@@ -1257,7 +1272,7 @@ a {
 .container .main .manage .manage__container::after {
   content: "";
   position: absolute;
-  margin-top: 1050px;
+  margin-top: 1025px;
   margin-left: 25px;
   width: 793px;
   height: 0;
