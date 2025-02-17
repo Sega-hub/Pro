@@ -12,6 +12,14 @@ a {
   src: url("../../public/fonts/hauora_sans/Hauora.eot");
   src: url("../../public/fonts/hauora_sans/Hauora.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/hauora_sans/Hauora.woff2") format("woff2"), url("../../public/fonts/hauora_sans/Hauora.woff") format("woff"), url("../../public/fonts/hauora_sans/Hauora.ttf") format("truetype");
 }
+@keyframes mainTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -41,6 +49,9 @@ a {
   justify-content: space-between;
   align-items: center;
   padding-top: 41px;
+  animation: mainTitle 1s ease 0s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 .container .header .header__container a img {
   width: 137px;
@@ -141,6 +152,9 @@ a {
   letter-spacing: 0px;
   text-align: "center";
   color: rgb(255, 255, 255);
+  animation: mainTitle 1s ease 0.2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 .container .main .offer .offer__container .offer__discription {
   max-width: 594px;
@@ -149,6 +163,9 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  animation: mainTitle 1s ease 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 .container .main .offer .offer__container .offer__discription .offer__discription-top {
   font-family: "Hauora";
@@ -195,11 +212,13 @@ a {
   font-family: "Hauora";
   font-weight: 600;
   font-size: 14px;
-  leading-trim: Cap height;
   line-height: 16px;
   letter-spacing: 0;
   text-align: "center";
   color: rgb(255, 255, 255);
+  animation: mainTitle 1s ease 0.7s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 .container .main .offer .offer__container .offer__button:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
@@ -229,6 +248,11 @@ a {
   letter-spacing: 0;
   text-align: "center";
   color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 1s;
+}
+.container .main .rate .rate__container .rate__container__title.appearance {
+  opacity: 1;
 }
 .container .main .rate .rate__container .rate__container__discription {
   margin-top: 40px;
@@ -238,6 +262,11 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(112, 111, 146);
+  opacity: 0;
+  transition: 1s;
+}
+.container .main .rate .rate__container .rate__container__discription.appearance {
+  opacity: 1;
 }
 .container .main .rate .rate__container .rate__container__box {
   width: 100%;
@@ -250,6 +279,8 @@ a {
   height: 768px;
   border: 1px solid rgb(73, 73, 73);
   border-radius: 20px;
+  opacity: 0;
+  transition: 0.5s;
 }
 .container .main .rate .rate__container .rate__container__box .rate__container__box-free .top {
   background-color: rgb(6, 6, 6);
@@ -332,12 +363,18 @@ a {
   letter-spacing: 0;
   color: rgb(112, 111, 146);
 }
+.container .main .rate .rate__container .rate__container__box .rate__container__box-free.appearance {
+  opacity: 1;
+}
 .container .main .rate .rate__container .rate__container__box .rate__container__box-team {
   margin-left: 20px;
   width: 548px;
   height: 768px;
   border-radius: 20px;
   border: 1px solid rgb(23, 19, 147);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.3s;
 }
 .container .main .rate .rate__container .rate__container__box .rate__container__box-team .top {
   background-color: rgb(6, 6, 6);
@@ -472,6 +509,9 @@ a {
   letter-spacing: 0;
   color: rgb(112, 111, 146);
 }
+.container .main .rate .rate__container .rate__container__box .rate__container__box-team.appearance {
+  opacity: 1;
+}
 .container .main .rate .rate__container .rate__container__question {
   display: flex;
   flex-direction: column;
@@ -486,6 +526,12 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(112, 111, 146);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.container .main .rate .rate__container .rate__container__question .question__question.appearance {
+  opacity: 1;
 }
 .container .main .rate .rate__container .rate__container__question .question__solution {
   margin-top: 10px;
@@ -495,6 +541,12 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+.container .main .rate .rate__container .rate__container__question .question__solution.appearance {
+  opacity: 1;
 }
 .container .main .rate .rate__container .rate__container__question .question__button {
   margin-top: 30px;
@@ -516,9 +568,15 @@ a {
   text-align: left;
   color: rgb(255, 255, 255);
   transition: 0.5s;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;
 }
 .container .main .rate .rate__container .rate__container__question .question__button:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .rate .rate__container .rate__container__question .question__button.appearance {
+  opacity: 1;
 }
 .container .main .rate .rate__container::after {
   content: "";
@@ -570,9 +628,15 @@ a {
   color: rgb(255, 255, 255);
   transition: 0.5s;
   height: 30px;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
 }
 .container .main .process .process__container .process__button:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .process .process__container .process__button.appearance {
+  opacity: 1;
 }
 .container .main .process .process__container .process__title {
   margin-top: 30px;
@@ -582,6 +646,12 @@ a {
   line-height: 47.81px;
   letter-spacing: 0;
   color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+.container .main .process .process__container .process__title.appearance {
+  opacity: 1;
 }
 .container .main .process .process__container .process__discription {
   max-width: 611px;
@@ -592,6 +662,12 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(112, 111, 146);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.container .main .process .process__container .process__discription.appearance {
+  opacity: 1;
 }
 .container .main .process .process__container .process__items {
   width: 100%;
@@ -630,6 +706,54 @@ a {
   letter-spacing: 0;
   color: rgb(112, 111, 146);
   max-width: 285px;
+}
+.container .main .process .process__container .process__items .process__items__box:nth-child(1) {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.container .main .process .process__container .process__items .process__items__box:nth-child(1).appearance {
+  opacity: 1;
+}
+.container .main .process .process__container .process__items .process__items__box:nth-child(2) {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+.container .main .process .process__container .process__items .process__items__box:nth-child(2).appearance {
+  opacity: 1;
+}
+.container .main .process .process__container .process__items .process__items__box:nth-child(3) {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.container .main .process .process__container .process__items .process__items__box:nth-child(3).appearance {
+  opacity: 1;
+}
+.container .main .process .process__container .process__items .process__items__box:nth-child(4) {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.7s;
+}
+.container .main .process .process__container .process__items .process__items__box:nth-child(4).appearance {
+  opacity: 1;
+}
+.container .main .process .process__container .process__items .process__items__box:nth-child(5) {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.9s;
+}
+.container .main .process .process__container .process__items .process__items__box:nth-child(5).appearance {
+  opacity: 1;
+}
+.container .main .process .process__container .process__items .process__items__box:nth-child(6) {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 1.1s;
+}
+.container .main .process .process__container .process__items .process__items__box:nth-child(6).appearance {
+  opacity: 1;
 }
 .container .main .process .process__container::after {
   content: "";
@@ -681,9 +805,15 @@ a {
   color: rgb(255, 255, 255);
   transition: 0.5s;
   height: 30px;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
 }
 .container .main .solution .solution__container .solution__button:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .solution .solution__container .solution__button.appearance {
+  opacity: 1;
 }
 .container .main .solution .solution__container .solution__title {
   margin-top: 30px;
@@ -694,6 +824,12 @@ a {
   letter-spacing: 0;
   color: rgb(255, 255, 255);
   max-width: 560px;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+.container .main .solution .solution__container .solution__title.appearance {
+  opacity: 1;
 }
 .container .main .solution .solution__container .solution__discription {
   margin-top: 40px;
@@ -704,6 +840,12 @@ a {
   letter-spacing: 0;
   color: rgb(112, 111, 146);
   max-width: 560px;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.container .main .solution .solution__container .solution__discription.appearance {
+  opacity: 1;
 }
 .container .main .solution .solution__container .solution__box {
   margin-top: 100px;
@@ -731,6 +873,12 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.container .main .solution .solution__container .solution__box .solution__box__integration .integration__info .integration__title.appearance {
+  opacity: 1;
 }
 .container .main .solution .solution__container .solution__box .solution__box__integration .integration__info .integration__discription {
   margin-top: 10px;
@@ -740,11 +888,20 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(112, 111, 146);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+.container .main .solution .solution__container .solution__box .solution__box__integration .integration__info .integration__discription.appearance {
+  opacity: 1;
 }
 .container .main .solution .solution__container .solution__box .solution__box__integration .integration__img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.container .main .solution .solution__container .solution__box .solution__box__integration .integration__img.appearance {
+  opacity: 1;
 }
 .container .main .solution .solution__container .solution__box .solution__box__integration .integration__img .integration__picture {
   display: flex;
@@ -752,6 +909,12 @@ a {
   width: 559px;
   height: 559px;
   mix-blend-mode: screen;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.container .main .solution .solution__container .solution__box .solution__box__integration .integration__img .integration__picture.appearance {
+  opacity: 1;
 }
 .container .main .solution .solution__container .solution__box .solution__box__bottom {
   margin-top: 24px;
@@ -777,6 +940,12 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__freelance .freelance__info .freelance__title.appearance {
+  opacity: 1;
 }
 .container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__freelance .freelance__info .freelance__discription {
   margin-top: 10px;
@@ -786,6 +955,12 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(112, 111, 146);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+.container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__freelance .freelance__info .freelance__discription.appearance {
+  opacity: 1;
 }
 .container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__freelance .freelance__img {
   margin-top: 24px;
@@ -797,6 +972,12 @@ a {
   width: 410px;
   height: 410px;
   mix-blend-mode: screen;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+.container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__freelance .freelance__img .freelance__picture.appearance {
+  opacity: 1;
 }
 .container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__plans {
   width: 548px;
@@ -816,6 +997,12 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.7s;
+}
+.container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__plans .plans__info .plans__title.appearance {
+  opacity: 1;
 }
 .container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__plans .plans__info .plans__discription {
   margin-top: 10px;
@@ -825,6 +1012,12 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(112, 111, 146);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.9s;
+}
+.container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__plans .plans__info .plans__discription.appearance {
+  opacity: 1;
 }
 .container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__plans .plans__img {
   margin-top: 72px;
@@ -836,6 +1029,12 @@ a {
   width: 360px;
   height: 360px;
   mix-blend-mode: screen;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 1s;
+}
+.container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__plans .plans__img .plans__picture.appearance {
+  opacity: 1;
 }
 .container .main .solution .solution__container::after {
   content: "";
@@ -887,9 +1086,15 @@ a {
   color: rgb(255, 255, 255);
   transition: 0.5s;
   height: 30px;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
 }
 .container .main .manage .manage__container .manage__button:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .manage .manage__container .manage__button.appearance {
+  opacity: 1;
 }
 .container .main .manage .manage__container .manage__title {
   margin-top: 30px;
@@ -900,6 +1105,12 @@ a {
   letter-spacing: 0;
   color: rgb(255, 255, 255);
   max-width: 560px;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+.container .main .manage .manage__container .manage__title.appearance {
+  opacity: 1;
 }
 .container .main .manage .manage__container .manage__discription {
   margin-top: 40px;
@@ -910,6 +1121,12 @@ a {
   letter-spacing: 0;
   color: rgb(112, 111, 146);
   max-width: 560px;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.container .main .manage .manage__container .manage__discription.appearance {
+  opacity: 1;
 }
 .container .main .manage .manage__container .manage__box {
   margin-top: 100px;
@@ -941,6 +1158,12 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .freelance__info .freelance__title.appearance {
+  opacity: 1;
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .freelance__info .freelance__discription {
   margin-top: 10px;
@@ -950,6 +1173,12 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(112, 111, 146);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .freelance__info .freelance__discription.appearance {
+  opacity: 1;
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .freelance__img {
   margin-top: 24px;
@@ -961,6 +1190,12 @@ a {
   width: 410px;
   height: 410px;
   mix-blend-mode: screen;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .freelance__img .freelance__picture.appearance {
+  opacity: 1;
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans {
   width: 548px;
@@ -980,6 +1215,12 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.9s;
+}
+.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .plans__info .plans__title.appearance {
+  opacity: 1;
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .plans__info .plans__discription {
   margin-top: 10px;
@@ -989,6 +1230,12 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(112, 111, 146);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 1s;
+}
+.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .plans__info .plans__discription.appearance {
+  opacity: 1;
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .plans__img {
   margin-top: 25px;
@@ -1000,6 +1247,12 @@ a {
   width: 360px;
   height: 360px;
   mix-blend-mode: screen;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 1.2s;
+}
+.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .plans__img .plans__picture.appearance {
+  opacity: 1;
 }
 .container .main .manage .manage__container::after {
   content: "";
@@ -1051,9 +1304,15 @@ a {
   color: rgb(255, 255, 255);
   transition: 0.5s;
   height: 30px;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
 }
 .container .main .hub .hub__container .hub__button:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .hub .hub__container .hub__button.appearance {
+  opacity: 1;
 }
 .container .main .hub .hub__container .hub__info {
   width: 100%;
@@ -1069,6 +1328,12 @@ a {
   line-height: 42px;
   letter-spacing: 0;
   color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+.container .main .hub .hub__container .hub__info .hub__info__left.appearance {
+  opacity: 1;
 }
 .container .main .hub .hub__container .hub__info .hub__info__right {
   max-width: 572px;
@@ -1078,6 +1343,12 @@ a {
   line-height: 42px;
   letter-spacing: 0;
   color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.container .main .hub .hub__container .hub__info .hub__info__right.appearance {
+  opacity: 1;
 }
 .container .main .hub .hub__container::after {
   content: "";
@@ -1115,6 +1386,12 @@ a {
   line-height: 40px;
   letter-spacing: 0px;
   color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.container .main .invite .invite__container .invite__title.appearance {
+  opacity: 1;
 }
 .container .main .invite .invite__container .invite__discription {
   margin-top: 30px;
@@ -1125,6 +1402,12 @@ a {
   letter-spacing: 0%;
   color: rgb(112, 111, 146);
   max-width: 572px;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+.container .main .invite .invite__container .invite__discription.appearance {
+  opacity: 1;
 }
 .container .main .invite .invite__container .invite__buttons {
   margin-top: 86px;
@@ -1149,9 +1432,15 @@ a {
   text-align: left;
   color: rgb(255, 255, 255);
   transition: 0.5s;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;
 }
 .container .main .invite .invite__container .invite__buttons .invite__buttons-enter:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .invite .invite__container .invite__buttons .invite__buttons-enter.appearance {
+  opacity: 1;
 }
 .container .main .invite .invite__container .invite__buttons .invite__buttons-register {
   margin-left: 20px;
@@ -1173,9 +1462,15 @@ a {
   text-align: left;
   color: rgb(255, 255, 255);
   transition: 0.5s;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.7s;
 }
 .container .main .invite .invite__container .invite__buttons .invite__buttons-register:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .invite .invite__container .invite__buttons .invite__buttons-register.appearance {
+  opacity: 1;
 }
 .container .footer {
   background: linear-gradient(rgb(6, 6, 40) 10%, rgb(8, 8, 52));

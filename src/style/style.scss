@@ -61,6 +61,15 @@ $width: 77.7%;
     }
 }
 
+@keyframes mainTitle {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .container {
     
     display: flex;
@@ -90,6 +99,11 @@ $width: 77.7%;
             justify-content: space-between;
             align-items: center;
             padding-top: 41px;
+
+            animation: mainTitle 1s ease 0s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+
             a {
                 img {
                     width: 137px;
@@ -165,7 +179,11 @@ $width: 77.7%;
                     line-height: 40px;
                     letter-spacing: 0px;
                     text-align: "center";
-                    color: $COLOR_WHITE;                    
+                    color: $COLOR_WHITE;   
+                    
+                    animation: mainTitle 1s ease 0.2s;
+                    animation-fill-mode: forwards;
+                    opacity: 0;
                 }
 
                 .offer__discription {
@@ -173,6 +191,10 @@ $width: 77.7%;
                     padding-top: 52px;
                     @include center();
                     flex-direction: column;
+
+                    animation: mainTitle 1s ease 0.5s;
+                    animation-fill-mode: forwards;
+                    opacity: 0;
 
                     .offer__discription-top {
                         font-family: "Hauora";
@@ -211,11 +233,14 @@ $width: 77.7%;
                     font-family: "Hauora";
                     font-weight: 600;
                     font-size: 14px;
-                    leading-trim: Cap height;
                     line-height: 16px;
                     letter-spacing: 0;
                     text-align: "center";
                     color: $COLOR_WHITE;
+
+                    animation: mainTitle 1s ease 0.7s;
+                    animation-fill-mode: forwards;
+                    opacity: 0;
                 }
             }            
         }
@@ -242,7 +267,13 @@ $width: 77.7%;
                     line-height: 47.81px;
                     letter-spacing: 0;
                     text-align: "center";
-                    color: $COLOR_WHITE;                    
+                    color: $COLOR_WHITE;   
+                    opacity: 0;
+                    transition: 1s;
+
+                    &.appearance {
+                        opacity: 1;
+                    }
                 }
 
                 .rate__container__discription {
@@ -253,6 +284,13 @@ $width: 77.7%;
                     line-height: 23.4px;
                     letter-spacing: 0;
                     color: $COLOR_GRAY;
+
+                    opacity: 0;
+                    transition: 1s;
+
+                    &.appearance {
+                        opacity: 1;
+                    }
                 }
 
                 .rate__container__box {
@@ -337,6 +375,13 @@ $width: 77.7%;
                                     color: $COLOR_GRAY;
                                 }
                             }                            
+                        }
+
+                        opacity: 0;
+                        transition: 0.5s;
+    
+                        &.appearance {
+                            opacity: 1;
                         }
                     }
 
@@ -450,6 +495,14 @@ $width: 77.7%;
                                 }
                             }
                         }
+
+                        opacity: 0;
+                        transition: 0.5s;
+                        transition-delay: 0.3s;
+    
+                        &.appearance {
+                            opacity: 1;
+                        }
                     }
                 }
 
@@ -467,6 +520,14 @@ $width: 77.7%;
                         line-height: 23.4px;
                         letter-spacing: 0;
                         color: $COLOR_GRAY;
+
+                        opacity: 0;
+                        transition: 0.5s;
+                        transition-delay: 0s;
+    
+                        &.appearance {
+                            opacity: 1;
+                        }
                     }
 
                     .question__solution {
@@ -477,11 +538,27 @@ $width: 77.7%;
                         line-height: 23.4px;
                         letter-spacing: 0;
                         color: $COLOR_WHITE;
+
+                        opacity: 0;
+                        transition: 0.5s;
+                        transition-delay: 0.3s;
+    
+                        &.appearance {
+                            opacity: 1;
+                        }
                     }
 
                     .question__button {
                         margin-top: 30px;
                         @include button(102px, black, rgba(52, 59, 67, 1));
+
+                        opacity: 0;
+                        transition: 0.5s;
+                        transition-delay: 0.5s;
+    
+                        &.appearance {
+                            opacity: 1;
+                        }
                     }
                 }
 
@@ -521,6 +598,14 @@ $width: 77.7%;
                 .process__button {
                     @include button(200px, rgba(7, 6, 45, 1), rgba(23, 19, 147, 1));
                     height: 30px;
+
+                    opacity: 0;
+                    transition: 0.5s;
+                    transition-delay: 0s;
+
+                    &.appearance {
+                        opacity: 1;
+                    }
                 }
                 .process__title {
                     margin-top: 30px;
@@ -530,6 +615,14 @@ $width: 77.7%;
                     line-height: 47.81px;
                     letter-spacing: 0;
                     color: $COLOR_WHITE;
+
+                    opacity: 0;
+                    transition: 0.5s;
+                    transition-delay: 0.3s;
+
+                    &.appearance {
+                        opacity: 1;
+                    }
                 }
                 .process__discription {
                     max-width: 611px;
@@ -540,6 +633,14 @@ $width: 77.7%;
                     line-height: 23.4px;
                     letter-spacing: 0;
                     color: $COLOR_GRAY;
+
+                    opacity: 0;
+                    transition: 0.5s;
+                    transition-delay: 0.5s;
+
+                    &.appearance {
+                        opacity: 1;
+                    }
                 }
                 .process__items {
                     width: 100%;
@@ -576,6 +677,66 @@ $width: 77.7%;
                             letter-spacing: 0;
                             color: $COLOR_GRAY;
                             max-width: 285px;
+                        }
+
+                        &:nth-child(1) {
+                            opacity: 0;
+                            transition: 0.5s;
+                            transition-delay: 0s;
+        
+                            &.appearance {
+                                opacity: 1;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            opacity: 0;
+                            transition: 0.5s;
+                            transition-delay: 0.2s;
+        
+                            &.appearance {
+                                opacity: 1;
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            opacity: 0;
+                            transition: 0.5s;
+                            transition-delay: 0.5s;
+        
+                            &.appearance {
+                                opacity: 1;
+                            }
+                        }
+
+                        &:nth-child(4) {
+                            opacity: 0;
+                            transition: 0.5s;
+                            transition-delay: 0.7s;
+        
+                            &.appearance {
+                                opacity: 1;
+                            }
+                        }
+
+                        &:nth-child(5) {
+                            opacity: 0;
+                            transition: 0.5s;
+                            transition-delay: 0.9s;
+        
+                            &.appearance {
+                                opacity: 1;
+                            }
+                        }
+
+                        &:nth-child(6) {
+                            opacity: 0;
+                            transition: 0.5s;
+                            transition-delay: 1.1s;
+        
+                            &.appearance {
+                                opacity: 1;
+                            }
                         }
                     }
                 }
@@ -614,6 +775,14 @@ $width: 77.7%;
                 .solution__button {
                     @include button(164px, rgba(7, 6, 45, 1), rgba(23, 19, 147, 1));
                     height: 30px;
+
+                    opacity: 0;
+                    transition: 0.5s;
+                    transition-delay: 0s;
+
+                    &.appearance {
+                        opacity: 1;
+                    }
                 }
                 .solution__title {
                     margin-top: 30px;
@@ -626,6 +795,14 @@ $width: 77.7%;
                     color: $COLOR_WHITE;
                     
                     max-width: 560px;
+
+                    opacity: 0;
+                    transition: 0.5s;
+                    transition-delay: 0.2s;
+
+                    &.appearance {
+                        opacity: 1;
+                    }
                 }
                 .solution__discription {
                     margin-top: 40px;
@@ -637,6 +814,14 @@ $width: 77.7%;
                     letter-spacing: 0;
                     color: $COLOR_GRAY;
                     max-width: 560px;
+
+                    opacity: 0;
+                    transition: 0.5s;
+                    transition-delay: 0.5s;
+
+                    &.appearance {
+                        opacity: 1;
+                    }
                 }
                 .solution__box {
                     margin-top: 100px;
@@ -666,6 +851,14 @@ $width: 77.7%;
                                 line-height: 23.4px;
                                 letter-spacing: 0;
                                 color: $COLOR_WHITE;
+
+                                opacity: 0;
+                                transition: 0.5s;
+                                transition-delay: 0s;
+            
+                                &.appearance {
+                                    opacity: 1;
+                                }
                             }
 
                             .integration__discription {
@@ -676,20 +869,40 @@ $width: 77.7%;
                                 line-height: 23.4px;
                                 letter-spacing: 0;
                                 color: $COLOR_GRAY;
+
+                                opacity: 0;
+                                transition: 0.5s;
+                                transition-delay: 0.25s;
+            
+                                &.appearance {
+                                    opacity: 1;
+                                }
                             }
                         }
 
                         .integration__img {
                             display: flex;
                             justify-content: center;
-                            align-items: center;
+                            align-items: center;                           
+        
+                            &.appearance {
+                                opacity: 1;
+                            }
 
                             .integration__picture {
                                 display: flex;
                                 margin-top: -100px;
                                 width: 559px;
                                 height: 559px;
-                                mix-blend-mode: screen;                                
+                                mix-blend-mode: screen;  
+                                
+                                opacity: 0;
+                                transition: 0.5s;
+                                transition-delay: 0.5s;
+
+                                &.appearance {
+                                    opacity: 1;
+                                }
                             }
                         }
                     }
@@ -719,6 +932,14 @@ $width: 77.7%;
                                     line-height: 23.4px;
                                     letter-spacing: 0;
                                     color: $COLOR_WHITE;
+
+                                    opacity: 0;
+                                    transition: 0.5s;
+                                    transition-delay: 0s;
+    
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
                                 }
     
                                 .freelance__discription {
@@ -729,6 +950,14 @@ $width: 77.7%;
                                     line-height: 23.4px;
                                     letter-spacing: 0;
                                     color: $COLOR_GRAY;
+
+                                    opacity: 0;
+                                    transition: 0.5s;
+                                    transition-delay: 0.2s;
+    
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
                                 }
                             }
 
@@ -742,7 +971,14 @@ $width: 77.7%;
                                     width: 410px;
                                     height: 410px;
                                     mix-blend-mode: screen;
-                               
+                                    
+                                    opacity: 0;
+                                    transition: 0.5s;
+                                    transition-delay: 0.3s;
+    
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
                                 }
                             }
                         }
@@ -765,6 +1001,14 @@ $width: 77.7%;
                                     line-height: 23.4px;
                                     letter-spacing: 0;
                                     color: $COLOR_WHITE;
+
+                                    opacity: 0;
+                                    transition: 0.5s;
+                                    transition-delay: 0.7s;
+    
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
                                 }
     
                                 .plans__discription {
@@ -775,6 +1019,14 @@ $width: 77.7%;
                                     line-height: 23.4px;
                                     letter-spacing: 0;
                                     color: $COLOR_GRAY;
+
+                                    opacity: 0;
+                                    transition: 0.5s;
+                                    transition-delay: 0.9s;
+    
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
                                 }
                             }
 
@@ -788,7 +1040,14 @@ $width: 77.7%;
                                     width: 360px;
                                     height: 360px;
                                     mix-blend-mode: screen;
-                               
+                                    
+                                    opacity: 0;
+                                    transition: 0.5s;
+                                    transition-delay: 1s;
+    
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
                                 }
                             }
                         }
@@ -828,6 +1087,14 @@ $width: 77.7%;
                 .manage__button {
                     @include button(167px, rgba(7, 6, 45, 1), rgba(23, 19, 147, 1));
                     height: 30px;
+
+                    opacity: 0;
+                    transition: 0.5s;
+                    transition-delay: 0s;
+
+                    &.appearance {
+                        opacity: 1;
+                    }
                 }
                 .manage__title {
                     margin-top: 30px;
@@ -838,6 +1105,14 @@ $width: 77.7%;
                     letter-spacing: 0;
                     color: $COLOR_WHITE;
                     max-width: 560px;
+
+                    opacity: 0;
+                    transition: 0.5s;
+                    transition-delay: 0.25s;
+
+                    &.appearance {
+                        opacity: 1;
+                    }
                 }
                 .manage__discription {
                     margin-top: 40px;
@@ -848,6 +1123,14 @@ $width: 77.7%;
                     letter-spacing: 0;
                     color: $COLOR_GRAY;
                     max-width: 560px;
+
+                    opacity: 0;
+                    transition: 0.5s;
+                    transition-delay: 0.5s;
+
+                    &.appearance {
+                        opacity: 1;
+                    }
                 }
                 .manage__box {
                     margin-top: 100px;
@@ -881,6 +1164,14 @@ $width: 77.7%;
                                     line-height: 23.4px;
                                     letter-spacing: 0;
                                     color: $COLOR_WHITE;
+
+                                    opacity: 0;
+                                    transition: 0.5s;
+                                    transition-delay: 0s;
+                
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
                                 }
     
                                 .freelance__discription {
@@ -891,6 +1182,14 @@ $width: 77.7%;
                                     line-height: 23.4px;
                                     letter-spacing: 0;
                                     color: $COLOR_GRAY;
+
+                                    opacity: 0;
+                                    transition: 0.5s;
+                                    transition-delay: 0.3s;
+                
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
                                 }
                             }
 
@@ -904,7 +1203,15 @@ $width: 77.7%;
                                     width: 410px;
                                     height: 410px;
                                     mix-blend-mode: screen;
-                               
+                                    
+
+                                    opacity: 0;
+                                    transition: 0.5s;
+                                    transition-delay: 0.5s;
+                
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
                                 }
                             }
                         }
@@ -927,6 +1234,14 @@ $width: 77.7%;
                                     line-height: 23.4px;
                                     letter-spacing: 0;
                                     color: $COLOR_WHITE;
+
+                                    opacity: 0;
+                                    transition: 0.5s;
+                                    transition-delay: 0.9s;
+                
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
                                 }
     
                                 .plans__discription {
@@ -937,6 +1252,14 @@ $width: 77.7%;
                                     line-height: 23.4px;
                                     letter-spacing: 0;
                                     color: $COLOR_GRAY;
+
+                                    opacity: 0;
+                                    transition: 0.5s;
+                                    transition-delay: 1s;
+                
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
                                 }
                             }
 
@@ -950,7 +1273,14 @@ $width: 77.7%;
                                     width: 360px;
                                     height: 360px;
                                     mix-blend-mode: screen;
-                               
+                                    
+                                    opacity: 0;
+                                    transition: 0.5s;
+                                    transition-delay: 1.2s;
+                
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
                                 }
                             }
                         }
@@ -991,12 +1321,21 @@ $width: 77.7%;
                 .hub__button {
                     @include button(159px, rgba(7, 6, 45, 1), rgba(23, 19, 147, 1));
                     height: 30px;
+
+                    opacity: 0;
+                    transition: 0.5s;
+                    transition-delay: 0s;
+
+                    &.appearance {
+                        opacity: 1;
+                    }
                 }
                 .hub__info {
                     width: 100%;
                     margin-top: 30px;
                     display: flex;
                     justify-content: space-between;
+
                     .hub__info__left {
                         max-width: 546px;
 
@@ -1005,7 +1344,14 @@ $width: 77.7%;
                         font-size: 35px;
                         line-height: 42px;
                         letter-spacing: 0;
-                        color: $COLOR_WHITE;                        
+                        color: $COLOR_WHITE;     
+                        
+                        opacity: 0;
+                        transition: 0.5s;
+                        transition-delay: 0.3s;
+                        &.appearance {
+                            opacity: 1;
+                        }
                     }
                     .hub__info__right {
                         max-width: 572px;
@@ -1015,7 +1361,14 @@ $width: 77.7%;
                         font-size: 35px;
                         line-height: 42px;
                         letter-spacing: 0;
-                        color: $COLOR_WHITE;                        
+                        color: $COLOR_WHITE;  
+                        
+                        opacity: 0;
+                        transition: 0.5s;
+                        transition-delay: 0.5s;
+                        &.appearance {
+                            opacity: 1;
+                        }
                     }
                 }
 
@@ -1054,7 +1407,14 @@ $width: 77.7%;
                     font-size: 40px;
                     line-height: 40px;
                     letter-spacing: 0px;
-                    color: $COLOR_WHITE;                    
+                    color: $COLOR_WHITE; 
+                    
+                    opacity: 0;
+                    transition: 0.5s;
+                    transition-delay: 0s;
+                    &.appearance {
+                        opacity: 1;
+                    }
                 }
                 .invite__discription {
                     margin-top: 30px;
@@ -1066,6 +1426,13 @@ $width: 77.7%;
                     letter-spacing: 0%;
                     color: $COLOR_GRAY;
                     max-width: 572px;
+
+                    opacity: 0;
+                    transition: 0.5s;
+                    transition-delay: 0.3s;
+                    &.appearance {
+                        opacity: 1;
+                    }
                 }
                 .invite__buttons {
                     margin-top: 86px;
@@ -1073,10 +1440,24 @@ $width: 77.7%;
                     display: flex;
                     .invite__buttons-enter {
                         @include button(138px, rgba(23, 19, 147, 0.4), rgba(3, 16, 180, 1));
+
+                        opacity: 0;
+                        transition: 0.5s;
+                        transition-delay: 0.5s;
+                        &.appearance {
+                            opacity: 1;
+                        }
                     }
                     .invite__buttons-register {
                         margin-left: 20px;
                         @include button(138px, transparent, rgba(23, 19, 147, 1));
+
+                        opacity: 0;
+                        transition: 0.5s;
+                        transition-delay: 0.7s;
+                        &.appearance {
+                            opacity: 1;
+                        }
                     }
                 }
             }
