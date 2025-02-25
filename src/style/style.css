@@ -1053,7 +1053,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: linear-gradient(rgb(1, 1, 9) 10%, rgb(5, 4, 26));
+  background: linear-gradient(rgb(1, 1, 9) 10%, rgb(0, 0, 0));
   padding-bottom: 370px;
 }
 .container .main .manage .manage__container {
@@ -1263,7 +1263,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(5, 4, 26);
+  background: linear-gradient(rgb(0, 0, 0) 20%, rgb(5, 4, 26));
   width: 100%;
   padding-bottom: 387px;
 }
@@ -1274,7 +1274,11 @@ a {
   display: flex;
   flex-direction: column;
 }
-.container .main .hub .hub__container .hub__button {
+.container .main .hub .hub__container .hub__top {
+  display: flex;
+  align-items: center;
+}
+.container .main .hub .hub__container .hub__top .hub__button {
   width: 159px;
   height: 42px;
   border-radius: 10px;
@@ -1294,11 +1298,32 @@ a {
   transition: 0.5s;
   transition-delay: 0s;
 }
-.container .main .hub .hub__container .hub__button:hover {
+.container .main .hub .hub__container .hub__top .hub__button:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
 }
-.container .main .hub .hub__container .hub__button.appearance {
+.container .main .hub .hub__container .hub__top .hub__button.appearance {
   opacity: 1;
+}
+.container .main .hub .hub__container .hub__top .hub__anim__box {
+  margin-left: 35px;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.container .main .hub .hub__container .hub__top .hub__anim__box.appearance {
+  opacity: 1;
+}
+.container .main .hub .hub__container .hub__top .hub__anim__box .hub__top-anim {
+  width: 300px;
+  height: 100px;
+  mix-blend-mode: screen;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .container .main .hub .hub__container .hub__info {
   width: 100%;
