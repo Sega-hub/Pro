@@ -96,9 +96,6 @@ a {
   margin-left: 38.5px;
   width: 72px;
   height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
   background-color: rgba(23, 19, 147, 0.4);
   border: 1px solid rgb(23, 19, 147);
@@ -107,9 +104,8 @@ a {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
   line-height: 16.8px;
-  text-align: left;
+  text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
   height: 30px;
@@ -193,9 +189,6 @@ a {
   margin: 126px 0 100px 0;
   width: 356px;
   height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
   background-color: rgb(7, 4, 51);
   border: 1px solid rgb(3, 16, 180);
@@ -204,9 +197,8 @@ a {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
   line-height: 16.8px;
-  text-align: left;
+  text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
   font-family: "Hauora";
@@ -230,7 +222,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgb(4, 4, 26), rgb(1, 1, 1));
+  background: linear-gradient(rgb(4, 4, 26), rgb(0, 0, 0));
 }
 .container .main .rate .rate__container {
   position: relative;
@@ -316,9 +308,6 @@ a {
   margin-top: 60px;
   width: 355px;
   height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
   background-color: rgb(6, 6, 6);
   border: 1px solid rgb(73, 73, 73);
@@ -327,9 +316,8 @@ a {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
   line-height: 16.8px;
-  text-align: left;
+  text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
   font-family: "Hauora";
@@ -440,9 +428,6 @@ a {
 .container .main .rate .rate__container .rate__container__box .rate__container__box-team .top .top__buttons .top__buttons-test {
   width: 236px;
   height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
   background-color: rgb(7, 6, 45);
   border: 1px solid rgb(3, 16, 180);
@@ -451,9 +436,8 @@ a {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
   line-height: 16.8px;
-  text-align: left;
+  text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
 }
@@ -464,20 +448,16 @@ a {
   margin-left: 20px;
   width: 102px;
   height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
-  background-color: black;
+  background-color: transparent;
   border: 1px solid rgb(73, 73, 73);
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
   line-height: 16.8px;
-  text-align: left;
+  text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
 }
@@ -563,11 +543,11 @@ a {
 }
 .container .main .rate .rate__container .rate__container__question .question__button {
   margin-top: 30px;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;
   width: 102px;
   height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
   background-color: black;
   border: 1px solid rgb(52, 59, 67);
@@ -576,20 +556,17 @@ a {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
   line-height: 16.8px;
-  text-align: left;
+  text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
-  opacity: 0;
-  transition: 0.5s;
-  transition-delay: 0.5s;
-}
-.container .main .rate .rate__container .rate__container__question .question__button:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  z-index: 1000;
 }
 .container .main .rate .rate__container .rate__container__question .question__button.appearance {
   opacity: 1;
+}
+.container .main .rate .rate__container .rate__container__question .question__button:hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
 }
 .container .main .rate .rate__container::after {
   content: "";
@@ -611,7 +588,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(1, 1, 1);
+  background-color: rgb(0, 0, 0);
   padding-bottom: 505px;
 }
 .container .main .process .process__container {
@@ -624,9 +601,6 @@ a {
 .container .main .process .process__container .process__button {
   width: 200px;
   height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
   background-color: rgb(7, 6, 45);
   border: 1px solid rgb(23, 19, 147);
@@ -635,9 +609,8 @@ a {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
   line-height: 16.8px;
-  text-align: left;
+  text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
   height: 30px;
@@ -730,9 +703,15 @@ a {
   opacity: 1;
 }
 .container .main .process .process__container .process__items .process__items__box:nth-child(2) {
+  padding-top: 28px;
   opacity: 0;
   transition: 0.5s;
   transition-delay: 0.2s;
+}
+.container .main .process .process__container .process__items .process__items__box:nth-child(2) .process__items__box-img {
+  width: 200px;
+  height: 200px;
+  mix-blend-mode: screen;
 }
 .container .main .process .process__container .process__items .process__items__box:nth-child(2).appearance {
   opacity: 1;
@@ -754,9 +733,15 @@ a {
   opacity: 1;
 }
 .container .main .process .process__container .process__items .process__items__box:nth-child(5) {
+  padding-top: 28px;
   opacity: 0;
   transition: 0.5s;
   transition-delay: 0.9s;
+}
+.container .main .process .process__container .process__items .process__items__box:nth-child(5) .process__items__box-img {
+  width: 200px;
+  height: 200px;
+  mix-blend-mode: screen;
 }
 .container .main .process .process__container .process__items .process__items__box:nth-child(5).appearance {
   opacity: 1;
@@ -789,7 +774,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: linear-gradient(rgb(1, 1, 1) 20%, rgb(1, 1, 9));
+  background: linear-gradient(rgb(0, 0, 0) 20%, rgb(1, 1, 9));
   padding-bottom: 370px;
 }
 .container .main .solution .solution__container {
@@ -802,9 +787,6 @@ a {
 .container .main .solution .solution__container .solution__button {
   width: 164px;
   height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
   background-color: rgb(7, 6, 45);
   border: 1px solid rgb(23, 19, 147);
@@ -813,9 +795,8 @@ a {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
   line-height: 16.8px;
-  text-align: left;
+  text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
   height: 30px;
@@ -1085,9 +1066,6 @@ a {
 .container .main .manage .manage__container .manage__button {
   width: 167px;
   height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
   background-color: rgb(7, 6, 45);
   border: 1px solid rgb(23, 19, 147);
@@ -1096,9 +1074,8 @@ a {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
   line-height: 16.8px;
-  text-align: left;
+  text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
   height: 30px;
@@ -1200,17 +1177,16 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 1.2s;
+}
+.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .freelance__img.appearance {
+  opacity: 1;
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .freelance__img .freelance__picture {
   width: 410px;
   height: 410px;
-  mix-blend-mode: screen;
-  opacity: 0;
-  transition: 0.5s;
-  transition-delay: 0.5s;
-}
-.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .freelance__img .freelance__picture.appearance {
-  opacity: 1;
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans {
   width: 548px;
@@ -1257,17 +1233,16 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .plans__img .plans__picture {
-  width: 360px;
-  height: 360px;
-  mix-blend-mode: screen;
   opacity: 0;
   transition: 0.5s;
   transition-delay: 1.2s;
 }
-.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .plans__img .plans__picture.appearance {
+.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .plans__img.appearance {
   opacity: 1;
+}
+.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .plans__img .plans__picture {
+  width: 360px;
+  height: 360px;
 }
 .container .main .manage .manage__container::after {
   content: "";
@@ -1302,9 +1277,6 @@ a {
 .container .main .hub .hub__container .hub__button {
   width: 159px;
   height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
   background-color: rgb(7, 6, 45);
   border: 1px solid rgb(23, 19, 147);
@@ -1313,9 +1285,8 @@ a {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
   line-height: 16.8px;
-  text-align: left;
+  text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
   height: 30px;
@@ -1431,9 +1402,6 @@ a {
 .container .main .invite .invite__container .invite__buttons .invite__buttons-enter {
   width: 138px;
   height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
   background-color: rgba(23, 19, 147, 0.4);
   border: 1px solid rgb(3, 16, 180);
@@ -1442,14 +1410,15 @@ a {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
   line-height: 16.8px;
-  text-align: left;
+  text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
   transition: 0.5s;
-  transition-delay: 0.5s;
 }
 .container .main .invite .invite__container .invite__buttons .invite__buttons-enter:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
@@ -1461,9 +1430,6 @@ a {
   margin-left: 20px;
   width: 138px;
   height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
   background-color: transparent;
   border: 1px solid rgb(23, 19, 147);
@@ -1472,14 +1438,15 @@ a {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
   line-height: 16.8px;
-  text-align: left;
+  text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
   transition: 0.5s;
-  transition-delay: 0.7s;
 }
 .container .main .invite .invite__container .invite__buttons .invite__buttons-register:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);

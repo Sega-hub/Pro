@@ -134,4 +134,37 @@ document.addEventListener("DOMContentLoaded", () => {
         return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
     }
 
-})
+    
+    const videos = document.querySelectorAll("#playback"); // Выбираем все видео
+
+    videos.forEach(video => {
+        let reverse = false; // Флаг реверса
+
+        video.addEventListener("timeupdate", () => {
+            if (!reverse && video.currentTime >= video.duration - 0.1) {
+                reverse = true;
+                reversePlayback(video);
+            } else if (reverse && video.currentTime <= 0.1) {
+                reverse = false;
+                video.play();
+            }
+        });
+
+        video.play(); // Запускаем видео
+    });
+
+    function reversePlayback(video) {
+        video.pause(); // Останавливаем видео перед реверсом
+        const interval = setInterval(() => {
+            if (video.currentTime > 0.1) {
+                video.currentTime -= 0.05; // Перематываем назад вручную
+            } else {
+                clearInterval(interval);
+                video.play(); // Запускаем заново
+            }
+        }, 30);
+    }
+
+});
+    
+

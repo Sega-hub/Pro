@@ -40,7 +40,6 @@ $width: 77.7%;
 @mixin button($width, $color, $borderC) {
     width: $width;
     height: 42px;
-    @include center();
     border-radius: 10px;
     background-color: $color;
     border: 1px solid $borderC;   
@@ -50,9 +49,8 @@ $width: 77.7%;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.03em;
-    letter-spacing: 0.03em;
     line-height: 16.8px;
-    text-align: left;
+    text-align: center;
     color: $COLOR_WHITE;    
     transition: 0.5s;
 
@@ -250,7 +248,7 @@ $width: 77.7%;
             padding-bottom: 261px;
             width: 100%;
             @include center();
-            background: linear-gradient(rgb(4, 4, 26), rgb(1, 1, 1));
+            background: linear-gradient(rgb(4, 4, 26), rgb(0, 0, 0));
            
             .rate__container {
                 position: relative;
@@ -461,7 +459,7 @@ $width: 77.7%;
 
                                 .top__buttons-communicate {   
                                     margin-left: 20px;                               
-                                    @include button(102px, black, rgba(73, 73, 73, 1));
+                                    @include button(102px, transparent, rgba(73, 73, 73, 1));
                                 }
                             }
 
@@ -562,8 +560,7 @@ $width: 77.7%;
 
                     .question__button {
                         margin-top: 30px;
-                        @include button(102px, black, rgba(52, 59, 67, 1));
-
+                     
                         opacity: 0;
                         transition: 0.5s;
                         transition-delay: 0.5s;
@@ -571,6 +568,9 @@ $width: 77.7%;
                         &.appearance {
                             opacity: 1;
                         }
+
+                        @include button(102px, black, rgba(52, 59, 67, 1));
+                        z-index: 1000;
                     }
                 }
 
@@ -599,7 +599,7 @@ $width: 77.7%;
         .process {
             width: 100%;
             @include center();
-            background-color: rgb(1,1,1);
+            background-color: rgb(0, 0, 0);
             padding-bottom: 505px;
             .process__container {
                 position: relative;
@@ -703,10 +703,18 @@ $width: 77.7%;
                         }
 
                         &:nth-child(2) {
+                            padding-top: 28px;
+                            
+                            .process__items__box-img {
+                                width: 200px;
+                                height: 200px;   
+                                mix-blend-mode: screen;
+                            }
+                            
                             opacity: 0;
                             transition: 0.5s;
                             transition-delay: 0.2s;
-        
+                            
                             &.appearance {
                                 opacity: 1;
                             }
@@ -733,6 +741,15 @@ $width: 77.7%;
                         }
 
                         &:nth-child(5) {
+                            padding-top: 28px;
+
+                            .process__items__box-img {
+                                width: 200px;
+                                height: 200px;   
+                                mix-blend-mode: screen;
+                            }
+                            
+
                             opacity: 0;
                             transition: 0.5s;
                             transition-delay: 0.9s;
@@ -777,7 +794,7 @@ $width: 77.7%;
         .solution {
             @include center();
             width: 100%;
-            background: linear-gradient(rgb(1,1,1) 20%, rgb(1, 1, 9));
+            background: linear-gradient(rgb(0, 0, 0) 20%, rgb(1, 1, 9));
             padding-bottom: 370px;
             .solution__container {
                 position: relative;
@@ -1212,20 +1229,26 @@ $width: 77.7%;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
+
+                                opacity: 0;
+                                transition: 0.5s;
+                                transition-delay: 1.2s;
+                                &.appearance {
+                                    opacity: 1;
+                                }
     
                                 .freelance__picture {
                                     width: 410px;
                                     height: 410px;
-                                    mix-blend-mode: screen;
                                     
 
-                                    opacity: 0;
-                                    transition: 0.5s;
-                                    transition-delay: 0.5s;
+                                    // opacity: 0;
+                                    // transition: 0.5s;
+                                    // transition-delay: 0.5s;
                 
-                                    &.appearance {
-                                        opacity: 1;
-                                    }
+                                    // &.appearance {
+                                    //     opacity: 1;
+                                    // }
                                 }
                             }
                         }
@@ -1282,19 +1305,25 @@ $width: 77.7%;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
+
+                                opacity: 0;
+                                transition: 0.5s;
+                                transition-delay: 1.2s;
+                                &.appearance {
+                                    opacity: 1;
+                                }
     
                                 .plans__picture {
                                     width: 360px;
                                     height: 360px;
-                                    mix-blend-mode: screen;
                                     
-                                    opacity: 0;
-                                    transition: 0.5s;
-                                    transition-delay: 1.2s;
+                                    // opacity: 0;
+                                    // transition: 0.5s;
+                                    // transition-delay: 1.2s;
                 
-                                    &.appearance {
-                                        opacity: 1;
-                                    }
+                                    // &.appearance {
+                                    //     opacity: 1;
+                                    // }
                                 }
                             }
                         }
@@ -1454,10 +1483,11 @@ $width: 77.7%;
                     display: flex;
                     .invite__buttons-enter {
                         @include button(138px, rgba(23, 19, 147, 0.4), rgba(3, 16, 180, 1));
+                        @include center();
 
                         opacity: 0;
                         transition: 0.5s;
-                        transition-delay: 0.5s;
+                        // transition-delay: 0.5s;
                         &.appearance {
                             opacity: 1;
                         }
@@ -1465,10 +1495,11 @@ $width: 77.7%;
                     .invite__buttons-register {
                         margin-left: 20px;
                         @include button(138px, transparent, rgba(23, 19, 147, 1));
+                        @include center();
 
                         opacity: 0;
                         transition: 0.5s;
-                        transition-delay: 0.7s;
+                        // transition-delay: 0.7s;
                         &.appearance {
                             opacity: 1;
                         }
