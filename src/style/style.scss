@@ -76,7 +76,7 @@ $width: 77.7%;
         width: 100vw;
         max-width: 100%;
         @include center();
-        background-color: rgb(11, 9, 69);
+        background-color: transparent;
         padding-bottom: 10px;
         transition: transform 0.3s ease-in-out;
         position: fixed;
