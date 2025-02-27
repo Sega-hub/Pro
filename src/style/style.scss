@@ -945,17 +945,30 @@ $width: 77.7%;
                         width: 100%;
 
                         .solution__box__freelance {
+                            position: relative;
                             min-width: 548px;
                             width: 548px;
                             height: 666px;
                             border-radius: 20px;
-                            background-color: $COLOR_BLACK;
-                            border: 1px solid $COLOR_DARK_GRAY;  
+                            border: 1px solid $COLOR_DARK_GRAY;
+                            overflow: hidden; /* Чтобы видео не выходило за границы блока */
 
+                            .video-background {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover; /* Чтобы видео заполнило весь блок */
+                                z-index: 1; /* Чтобы видео было на заднем плане */
+                            }
+                            
                             .freelance__info {
+                                position: relative; /* Чтобы текст был поверх видео */
+                                z-index: 1; /* Чтобы текст был поверх видео */
                                 max-width: 383px;
                                 padding: 80px 0 0 95px;
-    
+
                                 .freelance__title {
                                     font-family: "Hauora";
                                     font-weight: 500;
@@ -963,16 +976,15 @@ $width: 77.7%;
                                     line-height: 23.4px;
                                     letter-spacing: 0;
                                     color: $COLOR_WHITE;
-
                                     opacity: 0;
                                     transition: 0.5s;
                                     transition-delay: 0s;
-    
-                                    &.appearance {
-                                        opacity: 1;
-                                    }
                                 }
-    
+                                
+                                .freelance__title.appearance {
+                                    opacity: 1;
+                                }
+                                
                                 .freelance__discription {
                                     margin-top: 15px;
                                     font-family: "Hauora";
@@ -981,35 +993,13 @@ $width: 77.7%;
                                     line-height: 23.4px;
                                     letter-spacing: 0;
                                     color: $COLOR_GRAY;
-
                                     opacity: 0;
                                     transition: 0.5s;
                                     transition-delay: 0.2s;
-    
-                                    &.appearance {
-                                        opacity: 1;
-                                    }
                                 }
-                            }
-
-                            .freelance__img {
-                                margin-top: 24px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-    
-                                .freelance__picture {
-                                    width: 410px;
-                                    height: 410px;
-                                    mix-blend-mode: screen;
-                                    
-                                    opacity: 0;
-                                    transition: 0.5s;
-                                    transition-delay: 0.3s;
-    
-                                    &.appearance {
-                                        opacity: 1;
-                                    }
+                                
+                                .freelance__discription.appearance {
+                                    opacity: 1;
                                 }
                             }
                         }
@@ -1178,16 +1168,38 @@ $width: 77.7%;
                         width: 100%;
 
                         .manage__box__freelance {
+                            position: relative;
                             width: 548px;
                             height: 666px;
                             border-radius: 20px;
-                            background-color: $COLOR_BLACK;
-                            border: 1px solid $COLOR_DARK_GRAY;  
+                            border: 1px solid $COLOR_DARK_GRAY;
+                            overflow: hidden; /* Чтобы видео не выходило за границы блока */
+                            background-color: $COLOR_BLACK; /* Фон на случай, если видео не загрузится */
 
-                            .freelance__info {
+
+                            .video-background {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover; /* Чтобы видео заполнило весь блок */
+                                z-index: 1; /* Чтобы видео было на заднем плане */
+                                opacity: 0;
+                                transition: 0.5s;
+                                
+                                &.appearance {
+                                    opacity: 1;
+                                }
+                            }
+
+                            .freelance__info
+                            {
+                                position: relative; /* Чтобы текст был поверх видео */
+                                z-index: 1; /* Чтобы текст был поверх видео */
                                 max-width: 383px;
                                 padding: 80px 0 0 95px;
-    
+
                                 .freelance__title {
                                     font-family: "Hauora";
                                     font-weight: 500;
@@ -1195,16 +1207,15 @@ $width: 77.7%;
                                     line-height: 23.4px;
                                     letter-spacing: 0;
                                     color: $COLOR_WHITE;
-
                                     opacity: 0;
                                     transition: 0.5s;
                                     transition-delay: 0s;
-                
-                                    &.appearance {
-                                        opacity: 1;
-                                    }
                                 }
-    
+                                
+                                .freelance__title.appearance {
+                                    opacity: 1;
+                                }
+                                
                                 .freelance__discription {
                                     margin-top: 15px;
                                     font-family: "Hauora";
@@ -1213,57 +1224,44 @@ $width: 77.7%;
                                     line-height: 23.4px;
                                     letter-spacing: 0;
                                     color: $COLOR_GRAY;
-
                                     opacity: 0;
                                     transition: 0.5s;
                                     transition-delay: 0.3s;
-                
-                                    &.appearance {
-                                        opacity: 1;
-                                    }
                                 }
-                            }
-
-                            .freelance__img {
-                                margin-top: 24px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-
-                                opacity: 0;
-                                transition: 0.5s;
-                                transition-delay: 1.2s;
-                                &.appearance {
+                                
+                                .freelance__discription.appearance {
                                     opacity: 1;
                                 }
-    
-                                .freelance__picture {
-                                    width: 410px;
-                                    height: 410px;
-                                    
 
-                                    // opacity: 0;
-                                    // transition: 0.5s;
-                                    // transition-delay: 0.5s;
-                
-                                    // &.appearance {
-                                    //     opacity: 1;
-                                    // }
-                                }
                             }
                         }
 
                         .manage__box__plans {
+                            position: relative;
                             width: 548px;
                             height: 666px;
                             border-radius: 20px;
-                            background-color: $COLOR_BLACK;
-                            border: 1px solid $COLOR_DARK_GRAY;  
+                            border: 1px solid $COLOR_DARK_GRAY;
+                            overflow: hidden; /* Чтобы видео не выходило за границы блока */
+                            background-color: $COLOR_BLACK; /* Фон на случай, если видео не загрузится */
+
+                            .video-background {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover; /* Чтобы видео заполнило весь блок */
+                                z-index: 1; /* Чтобы видео было на заднем плане */
+                            }
 
                             .plans__info {
+                                position: relative; /* Чтобы текст был поверх видео */
+                                z-index: 1; /* Чтобы текст был поверх видео */
                                 max-width: 383px;
                                 padding: 80px 0 0 95px;
-    
+
+                                
                                 .plans__title {
                                     font-family: "Hauora";
                                     font-weight: 500;
@@ -1271,16 +1269,17 @@ $width: 77.7%;
                                     line-height: 23.4px;
                                     letter-spacing: 0;
                                     color: $COLOR_WHITE;
-
                                     opacity: 0;
                                     transition: 0.5s;
-                                    transition-delay: 0.9s;
-                
-                                    &.appearance {
-                                        opacity: 1;
-                                    }
+                                    transition-delay: 0s;
                                 }
-    
+                                
+                               
+                                .plans__title.appearance {
+                                    opacity: 1;
+                                }
+                                
+                                
                                 .plans__discription {
                                     margin-top: 15px;
                                     font-family: "Hauora";
@@ -1289,41 +1288,14 @@ $width: 77.7%;
                                     line-height: 23.4px;
                                     letter-spacing: 0;
                                     color: $COLOR_GRAY;
-
                                     opacity: 0;
                                     transition: 0.5s;
-                                    transition-delay: 1s;
-                
-                                    &.appearance {
-                                        opacity: 1;
-                                    }
+                                    transition-delay: 0.3s;
                                 }
-                            }
-
-                            .plans__img {
-                                margin-top: 25px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-
-                                opacity: 0;
-                                transition: 0.5s;
-                                transition-delay: 1.2s;
-                                &.appearance {
+                                
+                                
+                                .plans__discription.appearance {
                                     opacity: 1;
-                                }
-    
-                                .plans__picture {
-                                    width: 360px;
-                                    height: 360px;
-                                    
-                                    // opacity: 0;
-                                    // transition: 0.5s;
-                                    // transition-delay: 1.2s;
-                
-                                    // &.appearance {
-                                    //     opacity: 1;
-                                    // }
                                 }
                             }
                         }

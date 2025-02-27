@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -918,14 +919,27 @@ a {
   width: 100%;
 }
 .container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__freelance {
+  position: relative;
   min-width: 548px;
   width: 548px;
   height: 666px;
   border-radius: 20px;
-  background-color: rgb(6, 6, 6);
   border: 1px solid rgb(73, 73, 73);
+  overflow: hidden; /* Чтобы видео не выходило за границы блока */
+}
+.container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__freelance .video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* Чтобы видео заполнило весь блок */
+  z-index: 1; /* Чтобы видео было на заднем плане */
 }
 .container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__freelance .freelance__info {
+  position: relative; /* Чтобы текст был поверх видео */
+  z-index: 1; /* Чтобы текст был поверх видео */
   max-width: 383px;
   padding: 80px 0 0 95px;
 }
@@ -956,23 +970,6 @@ a {
   transition-delay: 0.2s;
 }
 .container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__freelance .freelance__info .freelance__discription.appearance {
-  opacity: 1;
-}
-.container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__freelance .freelance__img {
-  margin-top: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__freelance .freelance__img .freelance__picture {
-  width: 410px;
-  height: 410px;
-  mix-blend-mode: screen;
-  opacity: 0;
-  transition: 0.5s;
-  transition-delay: 0.3s;
-}
-.container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__freelance .freelance__img .freelance__picture.appearance {
   opacity: 1;
 }
 .container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__plans {
@@ -1133,13 +1130,32 @@ a {
   width: 100%;
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance {
+  position: relative;
   width: 548px;
   height: 666px;
   border-radius: 20px;
-  background-color: rgb(6, 6, 6);
   border: 1px solid rgb(73, 73, 73);
+  overflow: hidden; /* Чтобы видео не выходило за границы блока */
+  background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
+}
+.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* Чтобы видео заполнило весь блок */
+  z-index: 1; /* Чтобы видео было на заднем плане */
+  opacity: 0;
+  transition: 0.5s;
+}
+.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .video-background.appearance {
+  opacity: 1;
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .freelance__info {
+  position: relative; /* Чтобы текст был поверх видео */
+  z-index: 1; /* Чтобы текст был поверх видео */
   max-width: 383px;
   padding: 80px 0 0 95px;
 }
@@ -1172,30 +1188,28 @@ a {
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .freelance__info .freelance__discription.appearance {
   opacity: 1;
 }
-.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .freelance__img {
-  margin-top: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: 0.5s;
-  transition-delay: 1.2s;
-}
-.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .freelance__img.appearance {
-  opacity: 1;
-}
-.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .freelance__img .freelance__picture {
-  width: 410px;
-  height: 410px;
-}
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans {
+  position: relative;
   width: 548px;
   height: 666px;
   border-radius: 20px;
-  background-color: rgb(6, 6, 6);
   border: 1px solid rgb(73, 73, 73);
+  overflow: hidden; /* Чтобы видео не выходило за границы блока */
+  background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
+}
+.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* Чтобы видео заполнило весь блок */
+  z-index: 1; /* Чтобы видео было на заднем плане */
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .plans__info {
+  position: relative; /* Чтобы текст был поверх видео */
+  z-index: 1; /* Чтобы текст был поверх видео */
   max-width: 383px;
   padding: 80px 0 0 95px;
 }
@@ -1208,7 +1222,7 @@ a {
   color: rgb(255, 255, 255);
   opacity: 0;
   transition: 0.5s;
-  transition-delay: 0.9s;
+  transition-delay: 0s;
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .plans__info .plans__title.appearance {
   opacity: 1;
@@ -1223,26 +1237,10 @@ a {
   color: rgb(112, 111, 146);
   opacity: 0;
   transition: 0.5s;
-  transition-delay: 1s;
+  transition-delay: 0.3s;
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .plans__info .plans__discription.appearance {
   opacity: 1;
-}
-.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .plans__img {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: 0.5s;
-  transition-delay: 1.2s;
-}
-.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .plans__img.appearance {
-  opacity: 1;
-}
-.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .plans__img .plans__picture {
-  width: 360px;
-  height: 360px;
 }
 .container .main .manage .manage__container::after {
   content: "";
