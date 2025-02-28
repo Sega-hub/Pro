@@ -135,16 +135,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     
-    const videos = document.querySelectorAll("#playback"); // Выбираем все видео
+   
+    const videos = document.querySelectorAll("[data-playback]"); // Выбираем все видео с data-playback
 
     videos.forEach(video => {
-        let reverse = false; // Флаг реверса
+        let reverse = false;
+
+        video.addEventListener("ended", () => {
+            reverse = true;
+            reversePlayback(video);
+        });
 
         video.addEventListener("timeupdate", () => {
-            if (!reverse && video.currentTime >= video.duration - 0.1) {
-                reverse = true;
-                reversePlayback(video);
-            } else if (reverse && video.currentTime <= 0.1) {
+            if (reverse && video.currentTime <= 0.1) {
                 reverse = false;
                 video.play();
             }
@@ -154,16 +157,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     function reversePlayback(video) {
-        video.pause(); // Останавливаем видео перед реверсом
-        const interval = setInterval(() => {
+        video.pause();
+        function step() {
             if (video.currentTime > 0.1) {
-                video.currentTime -= 0.05; // Перематываем назад вручную
+                video.currentTime -= 0.05;
+                requestAnimationFrame(step);
             } else {
-                clearInterval(interval);
-                video.play(); // Запускаем заново
+                video.play();
             }
-        }, 30);
+        }
+        requestAnimationFrame(step);
     }
+   
+    
 
 });
     
