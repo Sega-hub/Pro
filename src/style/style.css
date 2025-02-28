@@ -936,6 +936,11 @@ a {
   -o-object-fit: cover;
      object-fit: cover; /* Чтобы видео заполнило весь блок */
   z-index: 1; /* Чтобы видео было на заднем плане */
+  opacity: 0;
+  transition: 0.5s;
+}
+.container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__freelance .video-background.appearance {
+  opacity: 1;
 }
 .container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__freelance .freelance__info {
   position: relative; /* Чтобы текст был поверх видео */
@@ -1206,6 +1211,11 @@ a {
   -o-object-fit: cover;
      object-fit: cover; /* Чтобы видео заполнило весь блок */
   z-index: 1; /* Чтобы видео было на заднем плане */
+  opacity: 0;
+  transition: 0.5s;
+}
+.container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .video-background.appearance {
+  opacity: 1;
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .plans__info {
   position: relative; /* Чтобы текст был поверх видео */

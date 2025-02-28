@@ -961,6 +961,13 @@ $width: 77.7%;
                                 height: 100%;
                                 object-fit: cover; /* Чтобы видео заполнило весь блок */
                                 z-index: 1; /* Чтобы видео было на заднем плане */
+
+                                opacity: 0;
+                                transition: 0.5s;
+
+                                &.appearance {
+                                    opacity: 1;
+                                }
                             }
                             
                             .freelance__info {
@@ -1187,7 +1194,7 @@ $width: 77.7%;
                                 z-index: 1; /* Чтобы видео было на заднем плане */
                                 opacity: 0;
                                 transition: 0.5s;
-                                
+
                                 &.appearance {
                                     opacity: 1;
                                 }
@@ -1253,6 +1260,13 @@ $width: 77.7%;
                                 height: 100%;
                                 object-fit: cover; /* Чтобы видео заполнило весь блок */
                                 z-index: 1; /* Чтобы видео было на заднем плане */
+
+                                opacity: 0;
+                                transition: 0.5s;
+
+                                &.appearance {
+                                    opacity: 1;
+                                }
                             }
 
                             .plans__info {
