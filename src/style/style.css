@@ -55,10 +55,8 @@ a {
   opacity: 0;
 }
 .container .header .header__container a img {
-  width: 184px;
+  width: 137px;
   height: 22.94px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .container .header .header__container .header__nav {
   display: flex;
@@ -1523,10 +1521,8 @@ a {
   flex-direction: column;
 }
 .container .footer .footer__container .footer__top .footer__logo {
-  width: 184px;
+  width: 137px;
   height: 22.94px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .container .footer .footer__container .footer__top .footer__newsletter {
   margin-top: 97.06px;
