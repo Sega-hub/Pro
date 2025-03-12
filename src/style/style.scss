@@ -175,6 +175,7 @@ $width: 77.7%;
                 object-fit: cover; /* Чтобы видео заполнило весь блок */
                 z-index: 1; /* Чтобы видео было на заднем плане */
                 mix-blend-mode: screen;
+                filter: brightness(50%);
             }
             
            .offer__container {
