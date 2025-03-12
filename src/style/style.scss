@@ -258,7 +258,6 @@ $width: 77.7%;
         }
 
         .rate {
-            padding-top: 166px;
             padding-bottom: 261px;
             width: 100%;
             @include center();
@@ -614,7 +613,7 @@ $width: 77.7%;
             width: 100%;
             @include center();
             background-color: rgb(0, 0, 0);
-            padding-bottom: 505px;
+            padding-bottom: 405px;
             .process__container {
                 position: relative;
                 max-width: 1116px;
@@ -788,7 +787,7 @@ $width: 77.7%;
                 &::after {
                     content: "";
                     position: absolute;
-                    margin-top: 1350px;
+                    margin-top: 1250px;
                     margin-left: 29px;
                     width: 6px;
                     height: 0px;
@@ -1544,7 +1543,7 @@ $width: 77.7%;
             color: white;
             .footer__top {
                 display: flex;
-                align-items: center;
+                align-items: start;
                 flex-direction: column;
                 .footer__logo {
                     width: 184px;

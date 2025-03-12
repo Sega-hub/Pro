@@ -232,7 +232,6 @@ a {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
 }
 .container .main .rate {
-  padding-top: 166px;
   padding-bottom: 261px;
   width: 100%;
   display: flex;
@@ -605,7 +604,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: rgb(0, 0, 0);
-  padding-bottom: 505px;
+  padding-bottom: 405px;
 }
 .container .main .process .process__container {
   position: relative;
@@ -773,7 +772,7 @@ a {
 .container .main .process .process__container::after {
   content: "";
   position: absolute;
-  margin-top: 1350px;
+  margin-top: 1250px;
   margin-left: 29px;
   width: 6px;
   height: 0px;
@@ -1520,7 +1519,7 @@ a {
 }
 .container .footer .footer__container .footer__top {
   display: flex;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
 }
 .container .footer .footer__container .footer__top .footer__logo {
