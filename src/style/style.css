@@ -584,7 +584,7 @@ a {
 .container .main .rate .rate__container::after {
   content: "";
   position: absolute;
-  margin-top: 975px;
+  margin-top: 1100px;
   margin-left: 27px;
   width: 926px;
   height: 0;
