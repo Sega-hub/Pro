@@ -106,7 +106,7 @@ $width: 77.7%;
                 img {
                     width: 184px;
                     height: 22.94px;
-                    object-fit: none;
+                    object-fit: cover;
                 }
             }
             .header__nav {
@@ -1548,7 +1548,7 @@ $width: 77.7%;
                 .footer__logo {
                     width: 184px;
                     height: 22.94px;
-                    object-fit: none;                
+                    object-fit: cover;                
                 }
                 .footer__newsletter {
                     margin-top: 97.06px;
