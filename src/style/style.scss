@@ -165,10 +165,23 @@ $width: 77.7%;
            background: linear-gradient(rgb(11, 9, 69) 20%, rgb(4, 4, 26));
            @include center();
            flex-direction: column;
+
+           .offer__video__back {                
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover; /* Чтобы видео заполнило весь блок */
+                z-index: 1; /* Чтобы видео было на заднем плане */
+                mix-blend-mode: screen;
+            }
+            
            .offer__container {
                 width: $width;
                 @include center();
                 flex-direction: column;
+                z-index: 2;
 
                 .offer__container__title {
                     font-family: "Hauora";
@@ -861,7 +874,7 @@ $width: 77.7%;
                     width: 100%;
 
                     .solution__box__integration {
-                       
+                        position: relative;
                         width: 1120px;
                         height: 600px;
                         display: flex;
@@ -869,8 +882,11 @@ $width: 77.7%;
                         border: 1px solid rgba(73, 73, 73, 1);
                         border-radius: 20px;
                         background-color: $COLOR_BLACK;
+                        overflow: hidden; /* Чтобы видео не выходило за границы блока */
 
                         .integration__info {
+                            position: relative; /* Чтобы текст был поверх видео */
+                            z-index: 2; /* Чтобы текст был поверх видео */
                             max-width: 383px;
                             padding: 80px 0 0 95px;
 
@@ -910,31 +926,23 @@ $width: 77.7%;
                             }
                         }
 
-                        .integration__img {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;                           
-        
+                        .video-background {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover; /* Чтобы видео заполнило весь блок */
+                            z-index: 1; /* Чтобы видео было на заднем плане */
+
+                            opacity: 0;
+                            transition: 0.5s;
+
                             &.appearance {
                                 opacity: 1;
                             }
-
-                            .integration__picture {
-                                display: flex;
-                                margin-top: -100px;
-                                width: 559px;
-                                height: 559px;
-                                mix-blend-mode: screen;  
-                                
-                                opacity: 0;
-                                transition: 0.5s;
-                                transition-delay: 0.5s;
-
-                                &.appearance {
-                                    opacity: 1;
-                                }
-                            }
                         }
+                        
                     }
 
                     .solution__box__bottom {
@@ -1012,17 +1020,21 @@ $width: 77.7%;
                         }
 
                         .solution__box__plans {
+                            position: relative;
                             min-width: 548px;
                             width: 548px;
                             height: 666px;
                             border-radius: 20px;
                             background-color: $COLOR_BLACK;
                             border: 1px solid $COLOR_DARK_GRAY;  
+                            overflow: hidden;
 
                             .plans__info {
                                 max-width: 383px;
                                 padding: 80px 0 0 95px;
-    
+                                position: relative;
+                                z-index: 2;
+
                                 .plans__title {
                                     font-family: "Hauora";
                                     font-weight: 500;
@@ -1059,24 +1071,20 @@ $width: 77.7%;
                                 }
                             }
 
-                            .plans__img {
-                                margin-top: 72px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-    
-                                .plans__picture {
-                                    width: 360px;
-                                    height: 360px;
-                                    mix-blend-mode: screen;
-                                    
-                                    opacity: 0;
-                                    transition: 0.5s;
-                                    transition-delay: 1s;
-    
-                                    &.appearance {
-                                        opacity: 1;
-                                    }
+                            .video-background {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover; /* Чтобы видео заполнило весь блок */
+                                z-index: 1; /* Чтобы видео было на заднем плане */
+
+                                opacity: 0;
+                                transition: 0.5s;
+
+                                &.appearance {
+                                    opacity: 1;
                                 }
                             }
                         }
@@ -1133,7 +1141,7 @@ $width: 77.7%;
                     line-height: 42px;
                     letter-spacing: 0;
                     color: $COLOR_WHITE;
-                    max-width: 560px;
+                    max-width: 617px;
 
                     opacity: 0;
                     transition: 0.5s;
@@ -1151,7 +1159,7 @@ $width: 77.7%;
                     line-height: 23.4px;
                     letter-spacing: 0;
                     color: $COLOR_GRAY;
-                    max-width: 560px;
+                    max-width: 617px;
 
                     opacity: 0;
                     transition: 0.5s;
