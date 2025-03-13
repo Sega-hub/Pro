@@ -1158,15 +1158,16 @@ a {
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .video-background {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 548px;
-  height: 666px;
+  top: 219px;
+  left: 69px;
+  width: 410px;
+  height: 410px;
   -o-object-fit: cover;
      object-fit: cover; /* Чтобы видео заполнило весь блок */
   z-index: 1; /* Чтобы видео было на заднем плане */
   opacity: 0;
   transition: 0.5s;
+  mix-blend-mode: screen;
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .video-background.appearance {
   opacity: 1;

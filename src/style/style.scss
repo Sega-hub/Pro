@@ -1194,14 +1194,15 @@ $width: 77.7%;
 
                             .video-background {
                                 position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 548px;
-                                height: 666px;
+                                top: 219px;
+                                left: 69px;
+                                width: 410px;
+                                height: 410px;
                                 object-fit: cover; /* Чтобы видео заполнило весь блок */
                                 z-index: 1; /* Чтобы видео было на заднем плане */
                                 opacity: 0;
                                 transition: 0.5s;
+                                mix-blend-mode: screen;
 
                                 &.appearance {
                                     opacity: 1;
