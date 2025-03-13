@@ -1217,10 +1217,10 @@ a {
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .video-background {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 548px;
-  height: 666px;
+  top: 244px;
+  left: 94px;
+  width: 360px;
+  height: 360px;
   -o-object-fit: cover;
      object-fit: cover; /* Чтобы видео заполнило весь блок */
   z-index: 1; /* Чтобы видео было на заднем плане */
