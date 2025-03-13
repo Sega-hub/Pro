@@ -910,9 +910,9 @@ a {
 .container .main .solution .solution__container .solution__box .solution__box__integration .video-background {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  left: 251px;
+  width: 617px;
+  height: 559px;
   -o-object-fit: cover;
      object-fit: cover; /* Чтобы видео заполнило весь блок */
   z-index: 1; /* Чтобы видео было на заднем плане */
@@ -940,10 +940,10 @@ a {
 }
 .container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__freelance .video-background {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 100px;
+  left: 69px;
+  width: 410px;
+  height: 450px;
   -o-object-fit: cover;
      object-fit: cover; /* Чтобы видео заполнило весь блок */
   z-index: 1; /* Чтобы видео было на заднем плане */
@@ -1035,10 +1035,10 @@ a {
 }
 .container .main .solution .solution__container .solution__box .solution__box__bottom .solution__box__plans .video-background {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 100px;
+  left: 69px;
+  width: 410px;
+  height: 450px;
   -o-object-fit: cover;
      object-fit: cover; /* Чтобы видео заполнило весь блок */
   z-index: 1; /* Чтобы видео было на заднем плане */
@@ -1158,10 +1158,10 @@ a {
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .video-background {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 100px;
+  left: 69px;
+  width: 410px;
+  height: 450px;
   -o-object-fit: cover;
      object-fit: cover; /* Чтобы видео заполнило весь блок */
   z-index: 1; /* Чтобы видео было на заднем плане */
@@ -1217,10 +1217,10 @@ a {
 }
 .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .video-background {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 100px;
+  left: 69px;
+  width: 410px;
+  height: 450px;
   -o-object-fit: cover;
      object-fit: cover; /* Чтобы видео заполнило весь блок */
   z-index: 1; /* Чтобы видео было на заднем плане */
