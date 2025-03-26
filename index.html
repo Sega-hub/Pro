@@ -7,6 +7,31 @@
     <title>Pro</title>
 </head>
 <body>
+    <div class="popup">
+        <div class="popup__container">
+             <div class="header__container">
+                 <a href="index.html"> 
+                     <img src="./public/images/logo.svg" alt="logotip" class="header__logo"> 
+                 </a>          
+                 <div class="header__buttons" >
+                     <button class="header__buttons-menu" onclick="closePopup()">Закрыть</button>
+                 </div>
+             </div>
+             <div class="popup__menu">
+                 <a href="./src/html/productsandfunctions.html" class="popup__menu__item">Продукты</a>
+                 <a href="#money" onclick="closePopup()" class="popup__menu__item">Решения</a>
+                 <a href="https://docs.gitlife.ru/docs/UserGuide" class="popup__menu__item">Документация</a>
+                 <a href="#footer" onclick="closePopup()" class="popup__menu__item">Проекты</a>
+                 <a href="./src/html/productsandfunctions.html" class="popup__menu__item">Для компании</a> 
+                 <a href="./src/html/productsandfunctions.html" class="popup__menu__item">Тарифы</a>       
+                                               
+             </div>
+             <div class="popup__button">
+                <button class="header__buttons-menu">Войти</button>
+                <button class="header__buttons-search">Поиск</button>
+             </div>
+        </div>
+     </div>
     <div class="container">
         <header class="header">
             <div class="header__container">
@@ -24,7 +49,7 @@
                 <div class="header__buttons">
                     <a href="#" class="header__buttons-search">Поиск</a>
                     <button class="header__buttons-enter">Войти</button>
-                    <button class="header__buttons-menu">Меню</button>
+                    <button class="header__buttons-menu" onclick="openPopup()">Меню</button>
                 </div>
             </div>
         </header>
@@ -38,7 +63,7 @@
                     <h1 class="offer__container__title" id="text">GitLife Professional</h1>
                     <div class="offer__discription">
                         <p class="offer__discription-top">Создавайте проекты совместно с помощью <span>GitLife Professional.</span></p>
-                        <p class="offer__discription-bottom">От удобной системы планирования задач и хранения документации до мощных инструментов управления релизами.</p>
+                        <p class="offer__discription-bottom">От удобной системы планирования задач <br> и хранения документации до мощных инструментов управления релизами.</p>
                     </div>
                     <button class="offer__button">Войти</button>
                 </div>
@@ -47,9 +72,9 @@
                 <div class="rate__container line">
                     <h2 class="rate__container__title" id="text">Гибкие тарифы для команд <br> любого размера и уровня сложности</h2>
                     <p class="rate__container__discription" id="text">
-                        Прозрачная система ценообразования с оптимальным <br> 
-                        соотношением стоимости и функциональности, которая <br> 
-                        масштабируется вместе с ростом вашего бизнеса и адаптируется <br>
+                        Прозрачная система ценообразования с оптимальным <br class="pc"> 
+                        соотношением стоимости и функциональности, которая <br class="pc">  
+                        масштабируется вместе с ростом вашего бизнеса и адаптируется <br class="pc"> 
                         под уникальные потребности команды.
                     </p>
                     <div class="rate__container__box">
@@ -232,13 +257,13 @@
                         Система доступа
                     </button>
                     <h2 class="manage__title" id="text">
-                        Управляйте командой эффективно <br>
-                        и безопасно в едином пространстве
+                        Управляйте командой эффективно <br class="pc">
+                        и безопасно <br class="mob"> в едином пространстве
                     </h2>
                     <p class="manage__discription" id="text">
-                        Интеллектуальные инструменты для контроля доступа и защиты <br> 
-                        данных, которые повышают производительность и обеспечивают <br> 
-                        безопасность на всех этапах работы.
+                        Интеллектуальные инструменты для <br class="mob"> контроля доступа и защиты <br class="pc"> 
+                        данных, <br class="mob"> которые повышают производительность и <br class="mob"> обеспечивают <br class="pc"> 
+                        безопасность на всех <br class="mob"> этапах работы.
                     </p>
                     <div class="manage__box">                        
                         <div class="manage__box__bottom">
