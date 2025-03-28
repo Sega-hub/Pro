@@ -21,6 +21,10 @@ a {
     opacity: 1;
   }
 }
+video {
+  cursor: none !important;
+}
+
 .popup {
   display: none;
 }
