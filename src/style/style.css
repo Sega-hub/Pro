@@ -25,6 +25,14 @@ a {
   display: none;
 }
 
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+video {
+  pointer-events: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -699,7 +707,7 @@ a {
 .container .main .process .process__container .process__items .process__items__box .process__items__box-title {
   margin-top: 30px;
   font-family: "Hauora";
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   line-height: 23.4px;
   letter-spacing: 0;
