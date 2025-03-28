@@ -3205,7 +3205,7 @@ $width: 77.7%;
         }
         .footer {
             background: linear-gradient(rgb(6, 6, 40) 10%, rgb(8, 8, 52));
-            padding-bottom: 122.54px;
+            padding-bottom: 88.54px;
             width: 100%;
             @include center();
 
@@ -3498,7 +3498,7 @@ $width: 77.7%;
                         opacity: 0;
                         transition: 1s;
 
-                        br {
+                        .pc {
                             display: none;
                         }
     
@@ -3891,7 +3891,7 @@ $width: 77.7%;
                                 margin-top: 20px;
                                 font-family: "Hauora";
                                 font-weight: 600;
-                                font-size: 18px;
+                                font-size: 16px;
                                 line-height: 130%;
                                 letter-spacing: 0;
                                 color: $COLOR_WHITE;

@@ -3230,7 +3230,7 @@ a {
   }
   .container .footer {
     background: linear-gradient(rgb(6, 6, 40) 10%, rgb(8, 8, 52));
-    padding-bottom: 122.54px;
+    padding-bottom: 88.54px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -3531,7 +3531,7 @@ a {
     opacity: 0;
     transition: 1s;
   }
-  .container .main .rate .rate__container .rate__container__discription br {
+  .container .main .rate .rate__container .rate__container__discription .pc {
     display: none;
   }
   .container .main .rate .rate__container .rate__container__discription.appearance {
@@ -3955,7 +3955,7 @@ a {
     margin-top: 20px;
     font-family: "Hauora";
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 130%;
     letter-spacing: 0;
     color: rgb(255, 255, 255);
