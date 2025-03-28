@@ -72,14 +72,6 @@ $width: 77.7%;
     display: none;
 }
 
-video::-webkit-media-controls {
-    display: none !important;
-}
-
-video {
-    pointer-events: none;
-}
-
 .container {
     
     display: flex;
