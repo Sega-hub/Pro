@@ -302,6 +302,3 @@ function closePopup() {
     document.body.style.overflow= "scroll";
 }
 
-document.querySelectorAll('video').forEach(video => {
-    video.controls = false; // Отключаем встроенные контролы
-});
