@@ -302,3 +302,8 @@ function closePopup() {
     document.body.style.overflow= "scroll";
 }
 
+document.querySelectorAll("video").forEach(video => {
+    video.addEventListener("pointerenter", () => {
+      video.removeAttribute("controls");
+    });
+});
