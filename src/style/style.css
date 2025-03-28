@@ -210,6 +210,9 @@ video {
   text-align: center;
   color: rgb(112, 111, 146);
 }
+.container .main .offer .offer__container .offer__discription .offer__discription-bottom br {
+  display: none;
+}
 .container .main .offer .offer__container .offer__button {
   margin: 126px 0 100px 0;
   width: 356px;
@@ -281,6 +284,10 @@ video {
   color: rgb(112, 111, 146);
   opacity: 0;
   transition: 1s;
+  max-width: 579px;
+}
+.container .main .rate .rate__container .rate__container__discription br {
+  display: none;
 }
 .container .main .rate .rate__container .rate__container__discription.appearance {
   opacity: 1;
@@ -596,7 +603,7 @@ video {
 .container .main .rate .rate__container::after {
   content: "";
   position: absolute;
-  margin-top: 1050px;
+  margin-top: 1108px;
   margin-left: 27px;
   width: 926px;
   height: 0;
@@ -782,7 +789,7 @@ video {
 .container .main .process .process__container::after {
   content: "";
   position: absolute;
-  margin-top: 1250px;
+  margin-top: 1249px;
   margin-left: 29px;
   width: 6px;
   height: 0px;
@@ -863,6 +870,9 @@ video {
   opacity: 0;
   transition: 0.5s;
   transition-delay: 0.5s;
+}
+.container .main .solution .solution__container .solution__discription br {
+  display: none;
 }
 .container .main .solution .solution__container .solution__discription.appearance {
   opacity: 1;
@@ -1068,7 +1078,7 @@ video {
 .container .main .solution .solution__container::after {
   content: "";
   position: absolute;
-  margin-top: 1650px;
+  margin-top: 1713px;
   margin-left: 25px;
   width: 793px;
   height: 0;
@@ -1293,7 +1303,7 @@ video {
 .container .main .manage .manage__container::after {
   content: "";
   position: absolute;
-  margin-top: 1025px;
+  margin-top: 1057px;
   margin-left: 25px;
   width: 793px;
   height: 0;
@@ -1410,7 +1420,7 @@ video {
 .container .main .hub .hub__container::after {
   content: "";
   position: absolute;
-  margin-top: 160px;
+  margin-top: 243px;
   margin-left: 31px;
   width: 793px;
   height: 0;
@@ -2329,7 +2339,7 @@ video {
   .container .main .rate .rate__container::after {
     content: "";
     position: absolute;
-    margin-top: 1850px;
+    margin-top: 1844px;
     margin-left: 30px;
     width: 3px;
     height: 0;
@@ -2803,7 +2813,7 @@ video {
   .container .main .solution .solution__container::after {
     content: "";
     position: absolute;
-    margin-top: 2270px;
+    margin-top: 2309px;
     margin-left: 30px;
     width: 3px;
     height: 0;
@@ -3022,7 +3032,7 @@ video {
   .container .main .manage .manage__container::after {
     content: "";
     position: absolute;
-    margin-top: 1720px;
+    margin-top: 1722px;
     margin-left: 30px;
     width: 3px;
     height: 0;
@@ -3140,7 +3150,7 @@ video {
   .container .main .hub .hub__container::after {
     content: "";
     position: absolute;
-    margin-top: 350px;
+    margin-top: 347px;
     margin-left: 30px;
     width: 3px;
     height: 0;
@@ -4355,7 +4365,7 @@ video {
   .container .main .solution .solution__container::after {
     content: "";
     position: absolute;
-    margin-top: 1880px;
+    margin-top: 1890px;
     margin-left: 50px;
     width: 3px;
     height: 0;
@@ -4591,7 +4601,7 @@ video {
     content: "";
     position: absolute;
     margin-top: 1370px;
-    margin-left: 50px;
+    margin-left: 36px;
     width: 3px;
     height: 0;
     background-image: url("../../public/images/adaptiveLine.png");
@@ -4708,7 +4718,7 @@ video {
   .container .main .hub .hub__container::after {
     content: "";
     position: absolute;
-    margin-top: 220px;
+    margin-top: 223px;
     margin-left: 30px;
     width: 3px;
     height: 0;
