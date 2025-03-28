@@ -1850,15 +1850,15 @@ a {
     aspect-ratio: 16/9;
   }
   .container .main .offer .offer__video__back {
+    margin-top: 50px;
+    mix-blend-mode: screen;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 60%;
     -o-object-fit: cover;
-       object-fit: cover; /* Чтобы видео заполнило весь блок */
-    z-index: 1; /* Чтобы видео было на заднем плане */
-    mix-blend-mode: screen;
+    object-fit: cover;
     filter: brightness(30%);
   }
   .container .main .offer .offer__container {
@@ -1902,6 +1902,9 @@ a {
     text-align: center;
     color: rgb(112, 111, 146);
   }
+  .container .main .offer .offer__container .offer__discription .offer__discription-top br {
+    display: none;
+  }
   .container .main .offer .offer__container .offer__discription .offer__discription-top span {
     color: rgb(255, 255, 255);
   }
@@ -1914,6 +1917,9 @@ a {
     letter-spacing: 0;
     text-align: center;
     color: rgb(112, 111, 146);
+  }
+  .container .main .offer .offer__container .offer__discription .offer__discription-bottom br {
+    display: none;
   }
   .container .main .offer .offer__container .offer__button {
     margin: 106px 0 100px 0;
@@ -1986,6 +1992,12 @@ a {
     color: rgb(112, 111, 146);
     opacity: 0;
     transition: 1s;
+  }
+  .container .main .rate .rate__container .rate__container__discription br {
+    display: none;
+  }
+  .container .main .rate .rate__container .rate__container__discription .pc {
+    display: flex;
   }
   .container .main .rate .rate__container .rate__container__discription.appearance {
     opacity: 1;
@@ -2089,6 +2101,9 @@ a {
     line-height: 18.2px;
     letter-spacing: 0;
     color: rgb(112, 111, 146);
+  }
+  .container .main .rate .rate__container .rate__container__box .rate__container__box-free .bottom .bottom__list li br {
+    display: none;
   }
   .container .main .rate .rate__container .rate__container__box .rate__container__box-free.appearance {
     opacity: 1;
@@ -2572,6 +2587,9 @@ a {
     opacity: 0;
     transition: 0.5s;
     transition-delay: 0.5s;
+  }
+  .container .main .solution .solution__container .solution__discription br {
+    display: none;
   }
   .container .main .solution .solution__container .solution__discription.appearance {
     opacity: 1;
@@ -3306,6 +3324,12 @@ a {
   }
 }
 @media (max-width: 715px) {
+  br {
+    display: flex !important;
+  }
+  .pc {
+    display: none !important;
+  }
   .container {
     display: flex;
     flex-direction: column;
