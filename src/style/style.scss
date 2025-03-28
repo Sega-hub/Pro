@@ -146,7 +146,7 @@ $width: 77.7%;
                 }
                 .header__buttons-enter {
                     margin-left: 38.5px;
-                    @include button(72px, rgba(23, 19, 147, 0.4), rgba(23, 19, 147, 1));
+                    @include button(72px, rgba(23, 19, 147, 0.4), #110E68);
                     height: 30px;
                 }
                 .header__buttons-menu {
@@ -414,7 +414,7 @@ $width: 77.7%;
                         height: 768px;
                         min-height: 768px;
                         border-radius: 20px;
-                        border: 1px solid rgba(23, 19, 147, 1);
+                        border: 1px solid #110E68;
                         overflow: hidden;
 
                         .top {
@@ -431,8 +431,8 @@ $width: 77.7%;
                                 height: 30px;
                                 border-bottom-right-radius: 10px;
                                 border-bottom-left-radius: 10px;                                
-                                background-color: rgba(7, 6, 45, 1);
-                                border: 1px solid rgba(23, 19, 147, 1);
+                                background-color: #07062D;
+                                border: 1px solid #110E68;
 
                                 font-family: "Hauora";
                                 font-weight: 500;
@@ -471,7 +471,7 @@ $width: 77.7%;
                                 margin-left: 95px;
                                 margin-top: 60px;
                                 .top__buttons-test {                                                               
-                                    @include button(236px, rgba(7, 6, 45, 1), rgba(3, 16, 180, 1));
+                                    @include button(236px, #07062D, rgba(3, 16, 180, 1));
                                 }
 
                                 .top__buttons-communicate {   
@@ -625,7 +625,7 @@ $width: 77.7%;
                 display: flex;
                 flex-direction: column;
                 .process__button {
-                    @include button(200px, rgba(7, 6, 45, 1), rgba(23, 19, 147, 1));
+                    @include button(200px, #07062D, #110E68);
                     height: 30px;
 
                     opacity: 0;
@@ -820,7 +820,7 @@ $width: 77.7%;
                 display: flex;
                 flex-direction: column;
                 .solution__button {
-                    @include button(164px, rgba(7, 6, 45, 1), rgba(23, 19, 147, 1));
+                    @include button(164px, #07062D, #110E68);
                     height: 30px;
 
                     opacity: 0;
@@ -1130,7 +1130,7 @@ $width: 77.7%;
                 display: flex;
                 flex-direction: column;
                 .manage__button {
-                    @include button(167px, rgba(7, 6, 45, 1), rgba(23, 19, 147, 1));
+                    @include button(167px, #07062D, #110E68);
                     height: 30px;
 
                     opacity: 0;
@@ -1378,7 +1378,7 @@ $width: 77.7%;
                     display: flex;
                     align-items: center;
                     .hub__button {
-                        @include button(159px, rgba(7, 6, 45, 1), rgba(23, 19, 147, 1));
+                        @include button(159px, #07062D, #110E68);
                         height: 30px;
     
                         opacity: 0;
@@ -1534,7 +1534,7 @@ $width: 77.7%;
                     }
                     .invite__buttons-register {
                         margin-left: 20px;
-                        @include button(138px, transparent, rgba(23, 19, 147, 1));
+                        @include button(138px, transparent, #110E68);
                         @include center();
 
                         opacity: 0;
@@ -1806,7 +1806,7 @@ $width: 77.7%;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        @include button(68px, rgba(23, 19, 147, 0.4), rgba(23, 19, 147, 1));
+                        @include button(68px, rgba(23, 19, 147, 0.4), #110E68);
                         height: 30px;
                     }
                 }
@@ -2074,7 +2074,7 @@ $width: 77.7%;
                             height: 738px;
                             min-height: 738px;
                             border-radius: 20px;
-                            border: 1px solid rgba(23, 19, 147, 1);
+                            border: 1px solid #110E68;
                             overflow: hidden;
     
                             .top {
@@ -2091,8 +2091,8 @@ $width: 77.7%;
                                     height: 30px;
                                     border-bottom-right-radius: 10px;
                                     border-bottom-left-radius: 10px;                                
-                                    background-color: rgba(7, 6, 45, 1);
-                                    border: 1px solid rgba(23, 19, 147, 1);
+                                    background-color: #07062D;
+                                    border: 1px solid #110E68;
     
                                     font-family: "Hauora";
                                     font-weight: 500;
@@ -2132,7 +2132,7 @@ $width: 77.7%;
                                     margin-left: 88px;
                                     margin-top: 50px;
                                     .top__buttons-test {                                                               
-                                        @include button(332px, rgba(7, 6, 45, 1), rgba(3, 16, 180, 1));
+                                        @include button(332px, #07062D, rgba(3, 16, 180, 1));
                                     }
     
                                     .top__buttons-communicate {   
@@ -2287,7 +2287,7 @@ $width: 77.7%;
                     display: flex;
                     flex-direction: column;
                     .process__button {
-                        @include button(200px, rgba(7, 6, 45, 1), rgba(23, 19, 147, 1));
+                        @include button(200px, #07062D, #110E68);
                         height: 30px;
     
                         opacity: 0;
@@ -2482,7 +2482,7 @@ $width: 77.7%;
                     display: flex;
                     flex-direction: column;
                     .solution__button {
-                        @include button(164px, rgba(7, 6, 45, 1), rgba(23, 19, 147, 1));
+                        @include button(164px, #07062D, #110E68);
                         height: 30px;
     
                         opacity: 0;
@@ -2792,7 +2792,7 @@ $width: 77.7%;
                     display: flex;
                     flex-direction: column;
                     .manage__button {
-                        @include button(167px, rgba(7, 6, 45, 1), rgba(23, 19, 147, 1));
+                        @include button(167px, #07062D, #110E68);
                         height: 30px;
     
                         opacity: 0;
@@ -3031,7 +3031,7 @@ $width: 77.7%;
                         display: flex;
                         align-items: center;
                         .hub__button {
-                            @include button(159px, rgba(7, 6, 45, 1), rgba(23, 19, 147, 1));
+                            @include button(159px, #07062D, #110E68);
                             height: 30px;
         
                             opacity: 0;
@@ -3189,7 +3189,7 @@ $width: 77.7%;
                         }
                         .invite__buttons-register {
                             margin-left: 20px;
-                            @include button(156px, transparent, rgba(23, 19, 147, 1));
+                            @include button(156px, transparent, #110E68);
                             @include center();
     
                             opacity: 0;
@@ -3344,7 +3344,7 @@ $width: 77.7%;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        @include button(68px, rgba(23, 19, 147, 0.4), rgba(23, 19, 147, 1));
+                        @include button(68px, rgba(23, 19, 147, 0.4), #110E68);
                         height: 30px;
                     }
                 }
@@ -3616,7 +3616,7 @@ $width: 77.7%;
                             height: 667px;
                             min-height: 667px;
                             border-radius: 20px;
-                            border: 1px solid rgba(23, 19, 147, 1);
+                            border: 1px solid #110E68;
                             overflow: hidden;
     
                             .top {
@@ -3633,8 +3633,8 @@ $width: 77.7%;
                                     height: 30px;
                                     border-bottom-right-radius: 10px;
                                     border-bottom-left-radius: 10px;                                
-                                    background-color: rgba(7, 6, 45, 1);
-                                    border: 1px solid rgba(23, 19, 147, 1);
+                                    background-color: #07062D;
+                                    border: 1px solid #110E68;
     
                                     font-family: "Hauora";
                                     font-weight: 500;
@@ -3674,7 +3674,7 @@ $width: 77.7%;
                                     margin-left: 20px;
                                     margin-top: 40px;
                                     .top__buttons-test {                                                               
-                                        @include button(194px, rgba(7, 6, 45, 1), rgba(3, 16, 180, 1));
+                                        @include button(194px, #07062D, rgba(3, 16, 180, 1));
                                     }
     
                                     .top__buttons-communicate {   
@@ -3824,7 +3824,7 @@ $width: 77.7%;
                     display: flex;
                     flex-direction: column;
                     .process__button {
-                        @include button(200px, rgba(7, 6, 45, 1), rgba(23, 19, 147, 1));
+                        @include button(200px, #07062D, #110E68);
                         height: 30px;
     
                         opacity: 0;
@@ -4018,7 +4018,7 @@ $width: 77.7%;
                     display: flex;
                     flex-direction: column;
                     .solution__button {
-                        @include button(164px, rgba(7, 6, 45, 1), rgba(23, 19, 147, 1));
+                        @include button(164px, #07062D, #110E68);
                         height: 30px;
                         margin-left: 20px;
 
@@ -4331,7 +4331,7 @@ $width: 77.7%;
                     display: flex;
                     flex-direction: column;
                     .manage__button {
-                        @include button(167px, rgba(7, 6, 45, 1), rgba(23, 19, 147, 1));
+                        @include button(167px, #07062D, #110E68);
                         height: 30px;
                         margin-left: 20px;
     
@@ -4424,7 +4424,7 @@ $width: 77.7%;
                                 .video-background {
                                     position: absolute;
                                     top: 210px;
-                                    left: 35px;
+                                    left: 25px;
                                     width: 300px;
                                     height: 300px;
                                     object-fit: cover; /* Чтобы видео заполнило весь блок */
@@ -4493,7 +4493,7 @@ $width: 77.7%;
                                 .video-background {
                                     position: absolute;
                                     top: 210px;
-                                    left: 35px;
+                                    left: 15px;
                                     width: 300px;
                                     height: 300px;
                                     object-fit: cover; /* Чтобы видео заполнило весь блок */
@@ -4590,7 +4590,7 @@ $width: 77.7%;
                         display: flex;
                         align-items: center;
                         .hub__button {
-                            @include button(155px, rgba(7, 6, 45, 1), rgba(23, 19, 147, 1));
+                            @include button(155px, #07062D, #110E68);
                             height: 30px;
         
                             opacity: 0;
@@ -4748,7 +4748,7 @@ $width: 77.7%;
                         }
                         .invite__buttons-register {
                             margin-left: 20px;
-                            @include button(155px, transparent, rgba(23, 19, 147, 1));
+                            @include button(155px, transparent, #110E68);
                             @include center();
     
                             opacity: 0;

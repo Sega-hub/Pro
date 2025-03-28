@@ -103,7 +103,7 @@ a {
   height: 42px;
   border-radius: 10px;
   background-color: rgba(23, 19, 147, 0.4);
-  border: 1px solid rgb(23, 19, 147);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -387,7 +387,7 @@ a {
   height: 768px;
   min-height: 768px;
   border-radius: 20px;
-  border: 1px solid rgb(23, 19, 147);
+  border: 1px solid #110E68;
   overflow: hidden;
   opacity: 0;
   transition: 0.5s;
@@ -407,8 +407,8 @@ a {
   height: 30px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  background-color: rgb(7, 6, 45);
-  border: 1px solid rgb(23, 19, 147);
+  background-color: #07062D;
+  border: 1px solid #110E68;
   font-family: "Hauora";
   font-weight: 500;
   font-size: 14px;
@@ -447,7 +447,7 @@ a {
   width: 236px;
   height: 42px;
   border-radius: 10px;
-  background-color: rgb(7, 6, 45);
+  background-color: #07062D;
   border: 1px solid rgb(3, 16, 180);
   cursor: pointer;
   font-family: "Hauora";
@@ -620,8 +620,8 @@ a {
   width: 200px;
   height: 42px;
   border-radius: 10px;
-  background-color: rgb(7, 6, 45);
-  border: 1px solid rgb(23, 19, 147);
+  background-color: #07062D;
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -806,8 +806,8 @@ a {
   width: 164px;
   height: 42px;
   border-radius: 10px;
-  background-color: rgb(7, 6, 45);
-  border: 1px solid rgb(23, 19, 147);
+  background-color: #07062D;
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -1090,8 +1090,8 @@ a {
   width: 167px;
   height: 42px;
   border-radius: 10px;
-  background-color: rgb(7, 6, 45);
-  border: 1px solid rgb(23, 19, 147);
+  background-color: #07062D;
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -1319,8 +1319,8 @@ a {
   width: 159px;
   height: 42px;
   border-radius: 10px;
-  background-color: rgb(7, 6, 45);
-  border: 1px solid rgb(23, 19, 147);
+  background-color: #07062D;
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -1494,7 +1494,7 @@ a {
   height: 42px;
   border-radius: 10px;
   background-color: transparent;
-  border: 1px solid rgb(23, 19, 147);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -1817,7 +1817,7 @@ a {
     height: 42px;
     border-radius: 10px;
     background-color: rgba(23, 19, 147, 0.4);
-    border: 1px solid rgb(23, 19, 147);
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -2101,7 +2101,7 @@ a {
     height: 738px;
     min-height: 738px;
     border-radius: 20px;
-    border: 1px solid rgb(23, 19, 147);
+    border: 1px solid #110E68;
     overflow: hidden;
     opacity: 0;
     transition: 0.5s;
@@ -2121,8 +2121,8 @@ a {
     height: 30px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-color: rgb(7, 6, 45);
-    border: 1px solid rgb(23, 19, 147);
+    background-color: #07062D;
+    border: 1px solid #110E68;
     font-family: "Hauora";
     font-weight: 500;
     font-size: 14px;
@@ -2162,7 +2162,7 @@ a {
     width: 332px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
+    background-color: #07062D;
     border: 1px solid rgb(3, 16, 180);
     cursor: pointer;
     font-family: "Hauora";
@@ -2336,8 +2336,8 @@ a {
     width: 200px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
-    border: 1px solid rgb(23, 19, 147);
+    background-color: #07062D;
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -2522,8 +2522,8 @@ a {
     width: 164px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
-    border: 1px solid rgb(23, 19, 147);
+    background-color: #07062D;
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -2807,8 +2807,8 @@ a {
     width: 167px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
-    border: 1px solid rgb(23, 19, 147);
+    background-color: #07062D;
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -3030,8 +3030,8 @@ a {
     width: 159px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
-    border: 1px solid rgb(23, 19, 147);
+    background-color: #07062D;
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -3206,7 +3206,7 @@ a {
     height: 42px;
     border-radius: 10px;
     background-color: transparent;
-    border: 1px solid rgb(23, 19, 147);
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -3365,7 +3365,7 @@ a {
     height: 42px;
     border-radius: 10px;
     background-color: rgba(23, 19, 147, 0.4);
-    border: 1px solid rgb(23, 19, 147);
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -3649,7 +3649,7 @@ a {
     height: 667px;
     min-height: 667px;
     border-radius: 20px;
-    border: 1px solid rgb(23, 19, 147);
+    border: 1px solid #110E68;
     overflow: hidden;
     opacity: 0;
     transition: 0.5s;
@@ -3669,8 +3669,8 @@ a {
     height: 30px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-color: rgb(7, 6, 45);
-    border: 1px solid rgb(23, 19, 147);
+    background-color: #07062D;
+    border: 1px solid #110E68;
     font-family: "Hauora";
     font-weight: 500;
     font-size: 14px;
@@ -3710,7 +3710,7 @@ a {
     width: 194px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
+    background-color: #07062D;
     border: 1px solid rgb(3, 16, 180);
     cursor: pointer;
     font-family: "Hauora";
@@ -3879,8 +3879,8 @@ a {
     width: 200px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
-    border: 1px solid rgb(23, 19, 147);
+    background-color: #07062D;
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -4064,8 +4064,8 @@ a {
     width: 164px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
-    border: 1px solid rgb(23, 19, 147);
+    background-color: #07062D;
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -4353,8 +4353,8 @@ a {
     width: 167px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
-    border: 1px solid rgb(23, 19, 147);
+    background-color: #07062D;
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -4446,7 +4446,7 @@ a {
   .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__freelance .video-background {
     position: absolute;
     top: 210px;
-    left: 35px;
+    left: 25px;
     width: 300px;
     height: 300px;
     -o-object-fit: cover;
@@ -4506,7 +4506,7 @@ a {
   .container .main .manage .manage__container .manage__box .manage__box__bottom .manage__box__plans .video-background {
     position: absolute;
     top: 210px;
-    left: 35px;
+    left: 15px;
     width: 300px;
     height: 300px;
     -o-object-fit: cover;
@@ -4592,8 +4592,8 @@ a {
     width: 155px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
-    border: 1px solid rgb(23, 19, 147);
+    background-color: #07062D;
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -4768,7 +4768,7 @@ a {
     height: 42px;
     border-radius: 10px;
     background-color: transparent;
-    border: 1px solid rgb(23, 19, 147);
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
