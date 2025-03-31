@@ -1740,8 +1740,8 @@ video {
     width: 242px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(4, 4, 28);
-    border: 1px solid rgb(3, 16, 180);
+    background-color: rgb(7, 4, 51);
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -3482,8 +3482,8 @@ video {
     width: 242px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(4, 4, 28);
-    border: 1px solid rgb(3, 16, 180);
+    background-color: rgb(7, 4, 51);
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;

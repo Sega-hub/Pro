@@ -1771,7 +1771,7 @@ video {
                 display: flex;
                 justify-content: space-between;
                 .header__buttons-menu {
-                    @include button(242px, rgba(4, 4, 28, 1), rgba(3, 16, 180, 1));
+                    @include button(242px, rgb(7, 4, 51), #110E68);
                     height: 43px;
                     font-size: 14px;
                     font-weight: 500;
@@ -3465,7 +3465,7 @@ video {
                 display: flex;
                 justify-content: space-between;
                 .header__buttons-menu {
-                    @include button(242px, rgba(4, 4, 28, 1), rgb(3, 16, 180));
+                    @include button(242px, rgb(7, 4, 51), #110E68);
                     height: 43px;
                     font-size: 14px;
                     font-weight: 500;
