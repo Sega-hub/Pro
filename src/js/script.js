@@ -1,9 +1,65 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+    const cards = document.querySelectorAll(".card"); 
+    const effect = document.querySelector(".effect");
+
+
     if (window.innerWidth > 501) {
         const cards = document.querySelectorAll(".card"); 
         const effect = document.querySelector(".effect");
     
         const lines = document.querySelectorAll(".line"); 
+
+        cards.forEach(card => {
+                   
+            card.style.position = "relative";
+            card.style.overflow = "hidden"; 
+            card.style.transition = "0.5s";
+            
+            effect.style.position = "absolute"; 
+            effect.style.scale = "0";
+    
+            card.addEventListener("mousemove", (e) => {
+                if (!card.contains(effect)) {
+                    card.appendChild(effect);
+                }
+                const rect = card.getBoundingClientRect(); 
+                const effectWidth = effect.offsetWidth / 2;
+                const effectHeight = effect.offsetHeight / 2;
+               
+                const offsetX = e.clientX - rect.left;
+                const offsetY = e.clientY - rect.top;               
+                const left = offsetX - effectWidth;
+                const top = offsetY - effectHeight;
+    
+                effect.style.scale = "1"; 
+                effect.style.top = top + "px";
+                effect.style.left = left + "px";
+    
+                const cardWidth = card.offsetWidth;
+                const cardHeight = card.offsetHeight;
+                const mouseInX = e.clientX - card.getBoundingClientRect().left;
+                const mouseInY = e.clientY - card.getBoundingClientRect().top;
+    
+                if (mouseInX < (cardWidth / 4) && mouseInY < (cardHeight / 4)) {
+                    card.style.transform = "perspective(700px) rotateX(-0.84deg) rotateY(1.39deg)";
+                } else if (mouseInX > (cardWidth*(3/4)) && mouseInY < (cardHeight / 4)) {
+                    card.style.transform = "perspective(700px) rotateX(-0.88deg) rotateY(-1.44deg)";
+                } else if (mouseInX < (cardWidth / 4) && mouseInY > (cardHeight*(3/4))) {
+                    card.style.transform = "perspective(700px) rotateX(0.84deg) rotateY(-1.39deg)";
+                } else if (mouseInX > (cardWidth*(3/4)) &&  mouseInY > (cardHeight*(3/4))) {
+                    card.style.transform = "perspective(700px) rotateX(0.88deg) rotateY(1.44deg)";
+                } else  card.style.transform = "";
+                 
+            });
+            card.addEventListener("mouseleave", () => {
+                effect.style.scale = "0";
+                card.style.transform = "";
+                if (card.contains(effect)) {
+                    card.removeChild(effect);
+                }
+            });
+        }); 
     
         if (lines.length > 0) {
             window.addEventListener("scroll", animOnScroll);

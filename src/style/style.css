@@ -25,6 +25,20 @@ video {
   cursor: none !important;
 }
 
+.effect {
+  scale: 0;
+  opacity: 1;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(4, 0, 110, 0.1);
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  filter: blur(50px);
+  transition: 0.1s ease;
+  pointer-events: none;
+}
+
 .popup {
   display: none;
 }
@@ -120,7 +134,7 @@ video {
   height: 30px;
 }
 .container .header .header__container .header__buttons .header__buttons-enter:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .header .header__container .header__buttons .header__buttons-menu {
   display: none;
@@ -219,7 +233,7 @@ video {
   height: 42px;
   border-radius: 10px;
   background-color: rgb(7, 4, 51);
-  border: 1px solid rgb(3, 16, 180);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -241,7 +255,7 @@ video {
   opacity: 0;
 }
 .container .main .offer .offer__container .offer__button:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .rate {
   padding-top: 75px;
@@ -360,7 +374,7 @@ video {
   color: rgb(255, 255, 255);
 }
 .container .main .rate .rate__container .rate__container__box .rate__container__box-free .top .top__button:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .rate .rate__container .rate__container__box .rate__container__box-free .top .bottom__stick {
   margin-top: 40px;
@@ -462,7 +476,7 @@ video {
   height: 42px;
   border-radius: 10px;
   background-color: #07062D;
-  border: 1px solid rgb(3, 16, 180);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -474,7 +488,7 @@ video {
   transition: 0.5s;
 }
 .container .main .rate .rate__container .rate__container__box .rate__container__box-team .top .top__buttons .top__buttons-test:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .rate .rate__container .rate__container__box .rate__container__box-team .top .top__buttons .top__buttons-communicate {
   margin-left: 20px;
@@ -494,7 +508,7 @@ video {
   transition: 0.5s;
 }
 .container .main .rate .rate__container .rate__container__box .rate__container__box-team .top .top__buttons .top__buttons-communicate:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .rate .rate__container .rate__container__box .rate__container__box-team .top .bottom__stick {
   margin-top: 40px;
@@ -598,7 +612,7 @@ video {
   opacity: 1;
 }
 .container .main .rate .rate__container .rate__container__question .question__button:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .rate .rate__container::after {
   content: "";
@@ -651,7 +665,7 @@ video {
   transition-delay: 0s;
 }
 .container .main .process .process__container .process__button:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .process .process__container .process__button.appearance {
   opacity: 1;
@@ -837,7 +851,7 @@ video {
   transition-delay: 0s;
 }
 .container .main .solution .solution__container .solution__button:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .solution .solution__container .solution__button.appearance {
   opacity: 1;
@@ -1126,7 +1140,7 @@ video {
   transition-delay: 0s;
 }
 .container .main .manage .manage__container .manage__button:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .manage .manage__container .manage__button.appearance {
   opacity: 1;
@@ -1355,7 +1369,7 @@ video {
   transition-delay: 0s;
 }
 .container .main .hub .hub__container .hub__top .hub__button:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .hub .hub__container .hub__top .hub__button.appearance {
   opacity: 1;
@@ -1485,7 +1499,7 @@ video {
   height: 42px;
   border-radius: 10px;
   background-color: rgba(23, 19, 147, 0.4);
-  border: 1px solid rgb(3, 16, 180);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -1502,7 +1516,7 @@ video {
   transition: 0.5s;
 }
 .container .main .invite .invite__container .invite__buttons .invite__buttons-enter:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .invite .invite__container .invite__buttons .invite__buttons-enter.appearance {
   opacity: 1;
@@ -1530,7 +1544,7 @@ video {
   transition: 0.5s;
 }
 .container .main .invite .invite__container .invite__buttons .invite__buttons-register:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .invite .invite__container .invite__buttons .invite__buttons-register.appearance {
   opacity: 1;
@@ -1626,12 +1640,12 @@ video {
     background: linear-gradient(rgb(10, 9, 67), rgb(0, 0, 0));
   }
   .popup .popup__container {
-    width: 84.6%;
+    width: 91.93%;
     display: flex;
     flex-direction: column;
   }
   .popup .popup__container .header__container {
-    margin-top: 26px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1672,7 +1686,7 @@ video {
     font-family: "Hauora";
   }
   .popup .popup__container .header__container .header__buttons button:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .popup .popup__container .popup__menu {
     margin-top: 103px;
@@ -1745,7 +1759,7 @@ video {
     font-family: "Hauora";
   }
   .popup .popup__container .popup__button .header__buttons-menu:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .popup .popup__container .popup__button .header__buttons-search {
     margin-left: 20px;
@@ -1775,7 +1789,7 @@ video {
     background-color: transparent;
   }
   .popup .popup__container .popup__button .header__buttons-search:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container {
     display: flex;
@@ -1804,8 +1818,8 @@ video {
     width: 91.93%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 46px;
+    align-items: self-end;
+    padding-top: 30px;
     animation: mainTitle 1s ease 0s;
     animation-fill-mode: forwards;
     opacity: 0;
@@ -1849,7 +1863,7 @@ video {
     height: 30px;
   }
   .container .header .header__container .header__buttons .header__buttons-menu:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main {
     display: flex;
@@ -1869,13 +1883,13 @@ video {
     aspect-ratio: 16/9;
   }
   .container .main .offer .offer__video__back {
-    margin-top: 50px;
+    margin-top: 0px;
     mix-blend-mode: screen;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 60%;
+    height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
     filter: brightness(30%);
@@ -1946,7 +1960,7 @@ video {
     height: 42px;
     border-radius: 10px;
     background-color: rgb(7, 4, 51);
-    border: 1px solid rgb(3, 16, 180);
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -1968,7 +1982,7 @@ video {
     opacity: 0;
   }
   .container .main .offer .offer__container .offer__button:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .rate {
     padding-top: 168px;
@@ -2090,7 +2104,7 @@ video {
     color: rgb(255, 255, 255);
   }
   .container .main .rate .rate__container .rate__container__box .rate__container__box-free .top .top__button:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .rate .rate__container .rate__container__box .rate__container__box-free .top .bottom__stick {
     margin-top: 40px;
@@ -2197,7 +2211,7 @@ video {
     height: 42px;
     border-radius: 10px;
     background-color: #07062D;
-    border: 1px solid rgb(3, 16, 180);
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -2209,7 +2223,7 @@ video {
     transition: 0.5s;
   }
   .container .main .rate .rate__container .rate__container__box .rate__container__box-team .top .top__buttons .top__buttons-test:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .rate .rate__container .rate__container__box .rate__container__box-team .top .top__buttons .top__buttons-communicate {
     margin-left: 20px;
@@ -2229,7 +2243,7 @@ video {
     transition: 0.5s;
   }
   .container .main .rate .rate__container .rate__container__box .rate__container__box-team .top .top__buttons .top__buttons-communicate:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .rate .rate__container .rate__container__box .rate__container__box-team .top .bottom__stick {
     margin-top: 40px;
@@ -2334,7 +2348,7 @@ video {
     opacity: 1;
   }
   .container .main .rate .rate__container .rate__container__question .question__button:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .rate .rate__container::after {
     content: "";
@@ -2387,7 +2401,7 @@ video {
     transition-delay: 0s;
   }
   .container .main .process .process__container .process__button:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .process .process__container .process__button.appearance {
     opacity: 1;
@@ -2446,7 +2460,7 @@ video {
   .container .main .process .process__container .process__items .process__items__box .process__items__box-title {
     margin-top: 20px;
     font-family: "Hauora";
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     line-height: 23.4px;
     letter-spacing: 0;
@@ -2573,7 +2587,7 @@ video {
     transition-delay: 0s;
   }
   .container .main .solution .solution__container .solution__button:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .solution .solution__container .solution__button.appearance {
     opacity: 1;
@@ -2861,7 +2875,7 @@ video {
     transition-delay: 0s;
   }
   .container .main .manage .manage__container .manage__button:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .manage .manage__container .manage__button.appearance {
     opacity: 1;
@@ -3084,7 +3098,7 @@ video {
     transition-delay: 0s;
   }
   .container .main .hub .hub__container .hub__top .hub__button:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .hub .hub__container .hub__top .hub__button.appearance {
     opacity: 1;
@@ -3215,7 +3229,7 @@ video {
     height: 42px;
     border-radius: 10px;
     background-color: rgba(23, 19, 147, 0.4);
-    border: 1px solid rgb(3, 16, 180);
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -3232,7 +3246,7 @@ video {
     transition: 0.5s;
   }
   .container .main .invite .invite__container .invite__buttons .invite__buttons-enter:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .invite .invite__container .invite__buttons .invite__buttons-enter.appearance {
     opacity: 1;
@@ -3260,7 +3274,7 @@ video {
     transition: 0.5s;
   }
   .container .main .invite .invite__container .invite__buttons .invite__buttons-register:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .invite .invite__container .invite__buttons .invite__buttons-register.appearance {
     opacity: 1;
@@ -3349,6 +3363,13 @@ video {
   .pc {
     display: none !important;
   }
+  .effect {
+    display: none;
+  }
+  .popup .popup__container {
+    width: 77.7%;
+    max-width: 330px;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -3421,7 +3442,7 @@ video {
     height: 30px;
   }
   .container .header .header__container .header__buttons .header__buttons-menu:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main {
     display: flex;
@@ -3504,7 +3525,7 @@ video {
     height: 42px;
     border-radius: 10px;
     background-color: rgb(7, 4, 51);
-    border: 1px solid rgb(3, 16, 180);
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -3526,7 +3547,7 @@ video {
     opacity: 0;
   }
   .container .main .offer .offer__container .offer__button:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .rate {
     padding-top: 113px;
@@ -3650,7 +3671,7 @@ video {
     color: rgb(255, 255, 255);
   }
   .container .main .rate .rate__container .rate__container__box .rate__container__box-free .top .top__button:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .rate .rate__container .rate__container__box .rate__container__box-free .top .bottom__stick {
     margin-top: 40px;
@@ -3754,7 +3775,7 @@ video {
     height: 42px;
     border-radius: 10px;
     background-color: #07062D;
-    border: 1px solid rgb(3, 16, 180);
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -3766,7 +3787,7 @@ video {
     transition: 0.5s;
   }
   .container .main .rate .rate__container .rate__container__box .rate__container__box-team .top .top__buttons .top__buttons-test:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .rate .rate__container .rate__container__box .rate__container__box-team .top .top__buttons .top__buttons-communicate {
     margin-left: 10px;
@@ -3786,7 +3807,7 @@ video {
     transition: 0.5s;
   }
   .container .main .rate .rate__container .rate__container__box .rate__container__box-team .top .top__buttons .top__buttons-communicate:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .rate .rate__container .rate__container__box .rate__container__box-team .top .bottom__stick {
     margin-top: 40px;
@@ -3886,7 +3907,7 @@ video {
     opacity: 1;
   }
   .container .main .rate .rate__container .rate__container__question .question__button:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .rate .rate__container::after {
     content: "";
@@ -3939,7 +3960,7 @@ video {
     transition-delay: 0s;
   }
   .container .main .process .process__container .process__button:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .process .process__container .process__button.appearance {
     opacity: 1;
@@ -4125,7 +4146,7 @@ video {
     transition-delay: 0s;
   }
   .container .main .solution .solution__container .solution__button:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .solution .solution__container .solution__button.appearance {
     opacity: 1;
@@ -4414,7 +4435,7 @@ video {
     transition-delay: 0s;
   }
   .container .main .manage .manage__container .manage__button:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .manage .manage__container .manage__button.appearance {
     opacity: 1;
@@ -4652,7 +4673,7 @@ video {
     transition-delay: 0s;
   }
   .container .main .hub .hub__container .hub__top .hub__button:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .hub .hub__container .hub__top .hub__button.appearance {
     opacity: 1;
@@ -4783,7 +4804,7 @@ video {
     height: 42px;
     border-radius: 10px;
     background-color: rgba(23, 19, 147, 0.4);
-    border: 1px solid rgb(3, 16, 180);
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -4800,7 +4821,7 @@ video {
     transition: 0.5s;
   }
   .container .main .invite .invite__container .invite__buttons .invite__buttons-enter:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .invite .invite__container .invite__buttons .invite__buttons-enter.appearance {
     opacity: 1;
@@ -4828,7 +4849,7 @@ video {
     transition: 0.5s;
   }
   .container .main .invite .invite__container .invite__buttons .invite__buttons-register:hover {
-    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .invite .invite__container .invite__buttons .invite__buttons-register.appearance {
     opacity: 1;

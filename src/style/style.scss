@@ -55,7 +55,15 @@ $width: 77.7%;
     transition: 0.5s;
 
     &:hover {
-        box-shadow: 0px 0px 26.39px 0px rgba(17, 14, 104, 1);
+        // box-shadow: 0px 0px 26.39px 0px rgba(17, 14, 104, 1);
+        box-shadow: 
+        0px 0px 1.1px 0px #110E68, 
+        0px 0px 2.2px 0px #110E68, 
+        0px 0px 7.7px 0px #110E68, 
+        0px 0px 15.39px 0px #110E68, 
+        0px 0px 26.39px 0px #110E68, 
+        0px 0px 46.18px 0px #110E68;
+
     }
 }
 
@@ -70,6 +78,20 @@ $width: 77.7%;
 
 video {
     cursor: none !important;
+}
+
+.effect {
+    scale: 0;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(4, 0, 110, 0.1);
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    filter: blur(50px);
+    transition:  0.1s ease;
+    pointer-events: none;
 }
 
 .popup {
@@ -255,7 +277,7 @@ video {
 
                     margin: 126px 0 100px 0;
 
-                    @include button(356px, rgb(7, 4, 51), rgba(3, 16, 180, 1));
+                    @include button(356px, rgb(7, 4, 51), #110E68);
 
                     font-family: "Hauora";
                     font-weight: 500;
@@ -489,7 +511,7 @@ video {
                                 margin-left: 95px;
                                 margin-top: 60px;
                                 .top__buttons-test {                                                               
-                                    @include button(236px, #07062D, rgba(3, 16, 180, 1));
+                                    @include button(236px, #07062D, #110E68);
                                 }
 
                                 .top__buttons-communicate {   
@@ -1546,7 +1568,7 @@ video {
 
                     display: flex;
                     .invite__buttons-enter {
-                        @include button(138px, rgba(23, 19, 147, 0.4), rgba(3, 16, 180, 1));
+                        @include button(138px, rgba(23, 19, 147, 0.4), #110E68);
                         @include center();
 
                         opacity: 0;
@@ -1669,11 +1691,11 @@ video {
         flex-direction: column;
         background: linear-gradient(rgb(10, 9, 67), rgb(0, 0, 0));
         .popup__container {   
-            width:  84.6%;
+            width:  $width;
             display: flex;
             flex-direction: column;
             .header__container {
-                margin-top: 26px;
+                margin-top: 30px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -1802,8 +1824,8 @@ video {
                 width: $width;
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
-                padding-top: 46px;
+                align-items: self-end;
+                padding-top: 30px;
     
                 animation: mainTitle 1s ease 0s;
                 animation-fill-mode: forwards;
@@ -1851,13 +1873,13 @@ video {
                flex-direction: column;
                aspect-ratio: 16/9;
                .offer__video__back {        
-                    margin-top: 50px; 
+                    margin-top: 0px; 
                     mix-blend-mode: screen;
                     position: absolute;
                     top: 0;
                     left: 0;
                     width: 100%;
-                    height: 60%;
+                    height: 100%;
                     -o-object-fit: cover;
                     object-fit: cover;
                     filter: brightness(30%);
@@ -1931,7 +1953,7 @@ video {
     
                         margin: 106px 0 100px 0;
     
-                        @include button(356px, rgb(7, 4, 51), rgba(3, 16, 180, 1));
+                        @include button(356px, rgb(7, 4, 51), #110E68);
     
                         font-family: "Hauora";
                         font-weight: 500;
@@ -2174,7 +2196,7 @@ video {
                                     margin-left: 88px;
                                     margin-top: 50px;
                                     .top__buttons-test {                                                               
-                                        @include button(332px, #07062D, rgba(3, 16, 180, 1));
+                                        @include button(332px, #07062D, #110E68);
                                     }
     
                                     .top__buttons-communicate {   
@@ -2396,7 +2418,7 @@ video {
                             .process__items__box-title {
                                 margin-top: 20px;
                                 font-family: "Hauora";
-                                font-weight: 600;
+                                font-weight: 500;
                                 font-size: 18px;
                                 line-height: 23.4px;
                                 letter-spacing: 0;
@@ -3223,7 +3245,7 @@ video {
     
                         display: flex;
                         .invite__buttons-enter {
-                            @include button(156px, rgba(23, 19, 147, 0.4), rgba(3, 16, 180, 1));
+                            @include button(156px, rgba(23, 19, 147, 0.4), #110E68);
                             @include center();
     
                             opacity: 0;
@@ -3341,6 +3363,18 @@ video {
 
     .pc {
         display: none !important;
+    }
+
+    .effect {
+        display: none;
+    }
+
+    .popup {
+       
+        .popup__container {   
+            width:  $width;
+            max-width: 330px;
+        }
     }
 
     $width: 94.87%;
@@ -3489,7 +3523,7 @@ video {
     
                         margin: 106px 0 100px 0;
     
-                        @include button(330px, rgb(7, 4, 51), rgba(3, 16, 180, 1));
+                        @include button(330px, rgb(7, 4, 51), #110E68);
     
                         font-family: "Hauora";
                         font-weight: 500;
@@ -3729,7 +3763,7 @@ video {
                                     margin-left: 20px;
                                     margin-top: 40px;
                                     .top__buttons-test {                                                               
-                                        @include button(194px, #07062D, rgba(3, 16, 180, 1));
+                                        @include button(194px, #07062D, #110E68);
                                     }
     
                                     .top__buttons-communicate {   
@@ -4791,7 +4825,7 @@ video {
     
                         display: flex;
                         .invite__buttons-enter {
-                            @include button(155px, rgba(23, 19, 147, 0.4), rgba(3, 16, 180, 1));
+                            @include button(155px, rgba(23, 19, 147, 0.4), #110E68);
                             @include center();
     
                             opacity: 0;
