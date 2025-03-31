@@ -1713,7 +1713,7 @@ video {
                     display: flex;
                     align-items: end;
                     button {
-                        @include button(88px, rgba(4, 4, 28, 1), rgba(3, 16, 180, 1));
+                        @include button(88px, rgba(14, 12, 89, 1), rgb(23, 19, 147));
                         height: 30px;
                         font-size: 14px;
                         font-weight: 500;
@@ -1771,7 +1771,7 @@ video {
                 display: flex;
                 justify-content: space-between;
                 .header__buttons-menu {
-                    @include button(242px, rgba(4, 4, 28, 1), rgb(3, 16, 180));
+                    @include button(242px, rgba(4, 4, 28, 1), rgba(3, 16, 180, 1));
                     height: 43px;
                     font-size: 14px;
                     font-weight: 500;
@@ -3407,7 +3407,7 @@ video {
                     display: flex;
                     align-items: end;
                     button {
-                        @include button(88px, rgba(4, 4, 28, 1), rgba(3, 16, 180, 1));
+                        @include button(88px, rgba(14, 12, 89, 1), rgb(23, 19, 147));
                         height: 30px;
                         font-size: 14px;
                         font-weight: 500;
