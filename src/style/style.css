@@ -1826,7 +1826,7 @@ video {
     opacity: 0;
   }
   .container .header .header__container a img {
-    width: 155px;
+    width: auto;
     height: 22.3796787262px;
   }
   .container .header .header__container .header__nav {
@@ -3303,7 +3303,7 @@ video {
     justify-content: space-between;
   }
   .container .footer .footer__container .footer__top .footer__logo {
-    width: 155px;
+    width: auto;
     height: 22.3796787262;
   }
   .container .footer .footer__container .footer__top .footer__newsletter {

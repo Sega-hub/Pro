@@ -1834,7 +1834,7 @@ video {
     
                 a {
                     img {
-                        width: 155px;
+                        width: auto;
                         height: 22.37967872619629px;
                     }
                 }
@@ -3291,7 +3291,7 @@ video {
                     flex-direction: row;
                     justify-content: space-between;
                     .footer__logo {
-                        width: 155px;
+                        width: auto;
                         height: 22.37967872619629;                
                     }
                     .footer__newsletter {
